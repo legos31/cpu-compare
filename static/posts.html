@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <!-- top navigation -->
+            <div class="top-nav ">
+                <div class="d-flex align-items-center top-nav-left">
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="Logo" />
+                    </div>
+                    <!-- menu -->
+                    <div class="menu">
+                        <div class="menu-item">
+                            <a href="#" class="menu-link dropdown">
+                                Процессоры
+                                <i class="arrow down"></i>
+                            </a>
+                            <div class="menu-dropdown">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-dropdown-link">
+                                        Сравнить процессоры
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#" class="menu-dropdown-link dropdown">
+                                        Рейтинг процессоров
+                                        <i class="arrow right"></i>
+                                    </a>
+                                    <div class="menu-dropdown">
+                                        <div class="menu-item">
+                                            <a href="#" class="menu-dropdown-link">
+                                                Рейтинг процессоров 1
+                                            </a>
+                                        </div>
+                                        <div class="menu-item">
+                                            <a href="#" class="menu-dropdown-link">
+                                                Рейтинг процессоров 2
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#" class="menu-dropdown-link">
+                                        Рейтинг Intel
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#" class="menu-dropdown-link">
+                                        Рейтинг AMD
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#" class="menu-dropdown-link">
+                                        Цена-качество до 300$
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" class="menu-link dropdown">
+                                Видеокарты
+                                <i class="arrow down"></i>
+                            </a>
+                            <div class="menu-dropdown">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-dropdown-link">
+                                        Цена-качество от 300$
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#" class="menu-dropdown-link">
+                                        Майнинг
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#" class="menu-dropdown-link">
+                                        Обзоры
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" class="menu-link">О сайте</a>
+                        </div>
+                    </div>
+                    <!-- menu -->
+
+                    <!-- mobile menu -->
+                    <div class="menu mobile">
+                        <div class="menu-item">
+                            <a href="#" class="menu-link dropdown" id="toggle-menu">
+                                Меню
+                                <i class="arrow down"></i>
+                            </a>
+                            <div class="menu-dropdown">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-dropdown-link dropdown">
+                                        Процессоры
+                                        <i class="arrow right"></i>
+                                    </a>
+                                    <div class="menu-dropdown">
+                                        <div class="menu-item menu-back">
+                                            <a href="#" class="menu-dropdown-link">
+                                                <i class="arrow left"></i>
+                                                Процессоры
+                                            </a>
+                                        </div>
+                                        <div class="menu-item">
+                                            <a href="#" class="menu-dropdown-link">
+                                                Сравнить процессоры
+                                            </a>
+                                        </div>
+                                        <div class="menu-item">
+                                            <a href="#" class="menu-dropdown-link dropdown">
+                                                Рейтинг процессоров
+                                                <i class="arrow right"></i>
+                                            </a>
+                                            <div class="menu-dropdown">
+                                                <div class="menu-item menu-back">
+                                                    <a href="#" class="menu-dropdown-link">
+                                                        <i class="arrow left"></i>
+                                                        Рейтинг процессоров
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <a href="#" class="menu-dropdown-link">
+                                                        Рейтинг Intel
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <a href="#" class="menu-dropdown-link">
+                                                        Рейтинг AMD
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-item">
+                                            <a href="#" class="menu-dropdown-link">
+                                                Рейтинг Intel
+                                            </a>
+                                        </div>
+                                        <div class="menu-item">
+                                            <a href="#" class="menu-dropdown-link">
+                                                Рейтинг AMD
+                                            </a>
+                                        </div>
+                                        <div class="menu-item">
+                                            <a href="#" class="menu-dropdown-link">
+                                                Цена-качество до 300$
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#" class="menu-dropdown-link dropdown">
+                                        Видеокарты
+                                        <i class="arrow right"></i>
+                                    </a>
+                                    <div class="menu-dropdown">
+                                        <div class="menu-item menu-back">
+                                            <a href="#" class="menu-dropdown-link">
+                                                <i class="arrow left"></i>
+                                                Видеокарты
+                                            </a>
+                                        </div>
+                                        <div class="menu-item">
+                                            <a href="#" class="menu-dropdown-link">
+                                                Цена-качество от 300$
+                                            </a>
+                                        </div>
+                                        <div class="menu-item">
+                                            <a href="#" class="menu-dropdown-link">
+                                                Майнинг
+                                            </a>
+                                        </div>
+                                        <div class="menu-item">
+                                            <a href="#" class="menu-dropdown-link">
+                                                Обзоры
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#" class="menu-dropdown-link">О сайте</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- mobile menu -->
+
+                </div>
+                <div class="d-flex align-items-center top-nav-right">
+                    <div class="lang-switcher">
+                        <div class="menu-item">
+                            <a href="#" class="menu-link dropdown">
+                                <img src="images/flags/ru.svg" alt="russian">
+                            </a>
+                            <div class="menu-dropdown">
+                                <a href="#" class="lang-switcher-item">
+                                    <img src="images/flags/italy.svg" alt=""> Русский
+                                </a>
+                                <a href="#" class="lang-switcher-item">
+                                    <img src="images/flags/italy.svg" alt=""> Deutsch
+                                </a>
+                                <a href="#" class="lang-switcher-item">
+                                    <img src="images/flags/italy.svg" alt=""> Português
+                                </a>
+                                <a href="#" class="lang-switcher-item">
+                                    <img src="images/flags/italy.svg" alt=""> Italiano
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="" class="search">
+                        <input type="search" name="search" placeholder="Поиск" autocomplete="off">
+                        <button type="submit" class="search-submit"></button>
+                        <button type="button" class="search-close"></button>
+                    </form>
+                    <div class="search-show"></div>
+                </div>
+            </div>
+            <!-- top navigation -->
+
+            <!-- compare form -->
+            <div class="tab-form">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#processors" role="tab"
+                            aria-controls="home" aria-selected="true">Процессоры </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#video-cards" role="tab"
+                            aria-controls="profile" aria-selected="false">Видеокарты </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="processors" role="tabpanel"
+                        aria-labelledby="processors-tab">
+                        <form action="#" class="position-relative">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="tab-form-autocomplete autocomplete">
+                                        <div class="autocomplete-image mr-3"></div>
+                                        <input type="text" class="autocomplete-input">
+                                        <span class="autocomplete-placeholder">Выберите процессор 1</span>
+
+                                        <div class="autocomplete-dropdown">
+                                            <div class="autocomplete-dropdown-scroll">
+                                                <div class="autocomplete-dropdown-list">
+                                                    <div class="autocomplete-dropdown-item">
+                                                        <img src="images/temp/amd.png" alt="">
+                                                        <span>AMD EPYC 7134</span>
+                                                    </div>
+                                                    <div class="autocomplete-dropdown-item">
+                                                        <img src="images/temp/amd.png" alt="">
+                                                        <span>AMD EPYC 7134</span>
+                                                    </div>
+                                                    <div class="autocomplete-dropdown-item">
+                                                        <img src="images/temp/amd.png" alt="">
+                                                        <span>AMD EPYC 7134</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tab-form-autocomplete autocomplete autocomplete-right">
+                                        <input type="text" class="autocomplete-input">
+                                        <span class="autocomplete-placeholder text-right">Выберите процессор 1</span>
+                                        <div class="autocomplete-dropdown">
+                                            <div class="autocomplete-dropdown-scroll">
+                                                <div class="autocomplete-dropdown-list">
+                                                    <div class="autocomplete-dropdown-item">
+                                                        <img src="images/temp/amd.png" alt="">
+                                                        <span>AMD EPYC 7134</span>
+                                                    </div>
+                                                    <div class="autocomplete-dropdown-item">
+                                                        <img src="images/temp/amd.png" alt="">
+                                                        <span>AMD EPYC 7134</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="autocomplete-image ml-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="autocomplete-button">Сравнить</button>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="video-cards" role="tabpanel" aria-labelledby="video-cards-tab">
+                        <form action="#" class="position-relative ">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="tab-form-autocomplete autocomplete orange">
+                                        <div class="autocomplete-image mr-3"></div>
+                                        <input type="text" class="autocomplete-input">
+                                        <span class="autocomplete-placeholder">Выберите видеокарту 1</span>
+
+                                        <div class="autocomplete-dropdown">
+                                            <div class="autocomplete-dropdown-scroll">
+                                                <div class="autocomplete-dropdown-list">
+                                                    <div class="autocomplete-dropdown-item">
+                                                        <img src="images/temp/amd.png" alt="">
+                                                        <span>AMD EPYC 7134</span>
+                                                    </div>
+                                                    <div class="autocomplete-dropdown-item">
+                                                        <img src="images/temp/amd.png" alt="">
+                                                        <span>AMD EPYC 7134</span>
+                                                    </div>
+                                                    <div class="autocomplete-dropdown-item">
+                                                        <img src="images/temp/amd.png" alt="">
+                                                        <span>AMD EPYC 7134</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tab-form-autocomplete autocomplete orange autocomplete-right">
+                                        <input type="text" class="autocomplete-input">
+                                        <span class="autocomplete-placeholder text-right">Выберите видеокарту 2</span>
+                                        <div class="autocomplete-dropdown">
+                                            <div class="autocomplete-dropdown-scroll">
+
+                                                <div class="autocomplete-dropdown-list">
+                                                    <div class="autocomplete-dropdown-item">
+                                                        <img src="images/temp/amd.png" alt="">
+                                                        <span>AMD EPYC 7134</span>
+                                                    </div>
+                                                    <div class="autocomplete-dropdown-item">
+                                                        <img src="images/temp/amd.png" alt="">
+                                                        <span>AMD EPYC 7134</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="autocomplete-image ml-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="autocomplete-button orange">Сравнить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- compare form -->
+        </div>
+    </header>
+    <!-- header -->
+
+
+    <div class="container mt">
+
+        <div class="row">
+            <div class="col-xl-9">
+                <div class="tab-title mt-0">
+                    <div class="title">Статьи</div>
+                    <ul class="my-tab nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="opills-all-tab" data-toggle="pill" href="#opills-all"
+                                role="tab" aria-controls="pills-home" aria-selected="true">Все</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " id="opills-home-tab" data-toggle="pill" href="#opills-home" role="tab"
+                                aria-controls="pills-home" aria-selected="true">Процессоры (Cpu)</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="opills-profile-tab" data-toggle="pill" href="#opills-profile"
+                                role="tab" aria-controls="pills-profile" aria-selected="false">Видеокарты (GPU)</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="post-list">
+                            <div class="post-list-item">
+                                <div class="post-list-image" style="background-image: url(images/temp/post.png);"></div>
+                                <div class="post-list-body">
+                                    <a href="#" class="post-list-title">Тестирование процессора Intel Core i7-10700K для
+                                        платформы
+                                        LGA1200</a>
+                                    <div class="post-list-text">Процесс этот, как и обычно, будет растянут во времени,
+                                        однако и
+                                        сейчас уже доступны три семейства процессоров, а не два.</div>
+                                    <div class="post-list-actions">
+                                        <div class="post-list-info">
+                                            <span>
+                                                <img src="images/icons/calendar.svg" alt="">
+                                                14 июля
+                                            </span>
+
+                                            <span>
+                                                <img src="images/icons/eye.svg" alt="">
+                                                133
+                                            </span>
+                                        </div>
+                                        <a href="#">
+                                            <img src="images/icons/arrow-right-orange.svg" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="post-list-item">
+                                <div class="post-list-image" style="background-image: url(images/temp/post.png);"></div>
+                                <div class="post-list-body">
+                                    <a href="#" class="post-list-title">Тестирование процессора Intel Core i7-10700K для
+                                        платформы
+                                        LGA1200</a>
+                                    <div class="post-list-text">Процесс этот, как и обычно, будет растянут во времени,
+                                        однако и
+                                        сейчас уже доступны три семейства процессоров, а не два.</div>
+                                    <div class="post-list-actions">
+                                        <div class="post-list-info">
+                                            <span>
+                                                <img src="images/icons/calendar.svg" alt="">
+                                                14 июля
+                                            </span>
+
+                                            <span>
+                                                <img src="images/icons/eye.svg" alt="">
+                                                133
+                                            </span>
+                                        </div>
+                                        <a href="#">
+                                            <img src="images/icons/arrow-right-orange.svg" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="post-list-item">
+                                <div class="post-list-image" style="background-image: url(images/temp/post.png);"></div>
+                                <div class="post-list-body">
+                                    <a href="#" class="post-list-title">Тестирование процессора Intel Core i7-10700K для
+                                        платформы
+                                        LGA1200</a>
+                                    <div class="post-list-text">Процесс этот, как и обычно, будет растянут во времени,
+                                        однако и
+                                        сейчас уже доступны три семейства процессоров, а не два.</div>
+                                    <div class="post-list-actions">
+                                        <div class="post-list-info">
+                                            <span>
+                                                <img src="images/icons/calendar.svg" alt="">
+                                                14 июля
+                                            </span>
+
+                                            <span>
+                                                <img src="images/icons/eye.svg" alt="">
+                                                133
+                                            </span>
+                                        </div>
+                                        <a href="#">
+                                            <img src="images/icons/arrow-right-orange.svg" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="opills-home" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="banner-mini"></div>
+
+                <div class="sidebar-compare">
+                    <div class="sidebar-compare-title mb-20">
+                        Последние сравнения
+                    </div>
+
+                    <a href="#" class="compare-card compact">
+                        <div class="compare-card-body">
+                            <div class="compare-card-left">
+                                <div>
+                                    <img src="images/temp/intel.png" alt="">
+                                </div>
+                                <span>Core i7 3930K</span>
+                            </div>
+                            <div class="compare-card-right">
+                                <div>
+                                    <img src="images/temp/amd.png" alt="">
+                                </div>
+                                <span>A10 7870K</span>
+                            </div>
+                            <div class="compare-card-icon"></div>
+                        </div>
+                    </a>
+                    <a href="#" class="compare-card compact">
+                        <div class="compare-card-body">
+                            <div class="compare-card-left">
+                                <div>
+                                    <img src="images/temp/intel.png" alt="">
+                                </div>
+                                <span>Core i7 3930K</span>
+                            </div>
+                            <div class="compare-card-right">
+                                <div>
+                                    <img src="images/temp/amd.png" alt="">
+                                </div>
+                                <span>A10 7870K</span>
+                            </div>
+                            <div class="compare-card-icon"></div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="title mb-30">Рекомендуем</div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="review">
+                        <img src="images/temp/intel.png" alt="">
+                        <span>NVIDIA GeForce RTX 2080</span>
+                        <a href="#" class="btn btn-orange">Смотреть</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="review">
+                        <img src="images/temp/intel.png" alt="">
+                        <span>NVIDIA GeForce RTX 2080</span>
+                        <a href="#" class="btn btn-orange">Смотреть</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 d-none d-xs-block d-sm-none d-xl-block">
+                    <div class="review ">
+                        <img src="images/temp/intel.png" alt="">
+                        <span>NVIDIA GeForce RTX 2080</span>
+                        <a href="#" class="btn btn-orange">Смотреть</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 d-none d-lg-block">
+                    <div class="review ">
+                        <img src="images/temp/intel.png" alt="">
+                        <span>NVIDIA GeForce RTX 2080</span>
+                        <a href="#" class="btn btn-orange">Смотреть</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-12">
+                    <div class="footer-flex">
+                        <div class="footer-logo">
+                            <img src="images/logo-footer.svg" alt="" class="l1">
+                            <img src="images/logo.svg" alt="" class="l2">
+                        </div>
+                        <div class="lang-switcher lang-switcher-top">
+                            <div class="menu-item">
+                                <a href="#" class="menu-link dropdown">
+                                    <img src="images/flags/ru.svg" alt="russian">
+                                </a>
+                                <div class="menu-dropdown">
+                                    <a href="#" class="lang-switcher-item">
+                                        <img src="images/flags/italy.svg" alt=""> Русский
+                                    </a>
+                                    <a href="#" class="lang-switcher-item">
+                                        <img src="images/flags/italy.svg" alt=""> Deutsch
+                                    </a>
+                                    <a href="#" class="lang-switcher-item">
+                                        <img src="images/flags/italy.svg" alt=""> Português
+                                    </a>
+                                    <a href="#" class="lang-switcher-item">
+                                        <img src="images/flags/italy.svg" alt=""> Italiano
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6">
+                    <div class="footer-title">Процессоры <span><i class="arrow down"></i></span> </div>
+                    <div class="row toggle">
+                        <div class="col-xl-6">
+                            <a href="#" class="footer-link">Сравнить процессоры</a>
+                            <a href="#" class="footer-link">Рейтинг процессоров</a>
+                            <a href="#" class="footer-link">Рейтинг Intel</a>
+                            <a href="#" class="footer-link">Рейтинг AMD</a>
+                        </div>
+                        <div class="col-xl-6">
+                            <a href="#" class="footer-link">Цена-качество до 300$</a>
+                            <a href="#" class="footer-link">Цена-качество от 300$</a>
+                            <a href="#" class="footer-link">Майнинг</a>
+                            <a href="#" class="footer-link">Обзоры</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6">
+                    <div class="footer-title">Видеокарты <span><i class="arrow down"></i></span></div>
+                    <div class="row toggle">
+                        <div class="col-xl-6">
+                            <a href="#" class="footer-link">Сравнить видеокарты</a>
+                            <a href="#" class="footer-link">Рейтинг видеокарт</a>
+                            <a href="#" class="footer-link">Рейтинг NVIDIA</a>
+                            <a href="#" class="footer-link">Рейтинг AMD</a>
+                        </div>
+                        <div class="col-xl-6">
+                            <a href="#" class="footer-link">Цена-качество до 300$</a>
+                            <a href="#" class="footer-link">Цена-качество от 300$</a>
+                            <a href="#" class="footer-link">Майнинг</a>
+                            <a href="#" class="footer-link">Обзоры</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="footer-title">Соцсети <span><i class="arrow down"></i></span></div>
+                    <div class="toggle">
+                        <div>
+                            <a href="#" class="footer-link">Facebook</a>
+                            <a href="#" class="footer-link">Вконтакте</a>
+                            <a href="#" class="footer-link">Youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-lg-8">
+                        Compare © 2020. Сравните процессоры и видеокарты, чтобы выбрать лучший
+                    </div>
+                    <div class="col-lg-4 footer-bottom-link">
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

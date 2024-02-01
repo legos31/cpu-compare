@@ -1,0 +1,1583 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<title>GPU comparison / graphics card comparison</title>
+<meta charset="utf-8">
+<meta name="description" content="Benchmarks and technical data for all modern graphics cards. Simple comparison of two graphics cards including performance evaluation">
+<meta property="og:title" content="GPU comparison / graphics card comparison">
+<meta name="keywords" content="GPU Benchmark, Nvidia Benchmark, AMD Benchmark, Nvidia vs. AMD, Intel, Apple, iGPU, GPU, Graphic card test, Graphic card benchmark, Technical data">
+<meta name="viewport" content="width=device-width">
+<meta name="google-site-verification" content="q6YW-LwLVEzSh9i6MWewDTylz6fCEJPv1aC77RUSMIU" />
+<link rel="stylesheet" type="text/css" href="/css/style_desktop.css?1687188931" media="all and (orientation:landscape)" />
+<link rel="stylesheet" type="text/css" href="/css/style_desktop.css?1687188931" media="only screen and (orientation:portrait) and (min-width : 601px)" />
+<link rel="stylesheet" type="text/css" href="/css/style_mobile.css?1687188931" media="only screen and (orientation:portrait) and (max-width : 600px)" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png" />
+<link rel="canonical" hreflang="en" href="https://www.gpu-monkey.com/en/" />
+<link rel="alternate" hreflang="es" href="https://www.gpu-monkey.com/es/" />
+<link rel="alternate" hreflang="fr" href="https://www.gpu-monkey.com/fr/" />
+<link rel="alternate" hreflang="it" href="https://www.gpu-monkey.com/it/" />
+<link rel="alternate" hreflang="de" href="https://www.gpu-monkey.com/de/" />
+<link rel="alternate" hreflang="ja" href="https://www.gpu-monkey.com/ja/" />
+<link rel="alternate" hreflang="x-default" href="https://www.gpu-monkey.com/en/" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W1TRH4T9S3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-W1TRH4T9S3');
+</script>
+<link rel="stylesheet" href="https://a.pub.network/core/pubfig/cls.css">
+<script data-cfasync="false" type="text/javascript">
+  var freestar = freestar || {};
+  freestar.queue = freestar.queue || [];
+  freestar.config = freestar.config || {};
+  freestar.config.enabled_slots = [];
+  freestar.initCallback = function () { (freestar.config.enabled_slots.length === 0) ? freestar.initCallbackCalled = false : freestar.newAdSlots(freestar.config.enabled_slots) }
+</script>
+<script src="https://a.pub.network/gpu-monkey-com/pubfig.min.js" async></script>
+</head>
+<body id="body" onLoad="build_vs();" onkeydown="if(event.keyCode == 27){document.getElementById('body').style.overflow = 'visible'; document.getElementById('fade').style.visibility = 'hidden'; document.getElementById('popup').style.visibility = 'hidden';}">
+<div id="fade" style="visibility:hidden;"></div>
+<div id="popup">
+<div style="float:right; font-size: 16px; font-weight: bold; color: #000000"><b><a style="cursor: pointer;" onClick="document.getElementById('body').style.overflow = 'visible'; document.getElementById('fade').style.visibility = 'hidden'; document.getElementById('popup').style.visibility = 'hidden';">X</a></b></div>
+<div id="popup_inner"></div>
+</div>
+<div id="page">
+<div id="header">
+<div id="nav" role="navigation">
+<ul class="menu">
+<li class="sub" onClick="toggle_menu('sub8');" onMouseOver="toggle_menu('sub8',1);">
+<a class="menu" aria-haspopup="true" href="/en/">Comparison</a>
+<ul class="menu submenu" id="sub7" style="width: 200px;">
+<li><a class="menu" href="/en/">GPU comparison</a></li>
+<li><a class="menu" href="https://www.cpu-monkey.com">CPU comparison</a></li>
+<li><a class="menu" href="https://www.check-mac.com">Apple product comparison</a></li>
+</ul>
+</li>
+<li class="sub" onClick="toggle_menu('sub5');" onMouseOver="toggle_menu('sub5',1);">
+<span class="menu" aria-haspopup="true">Search</span>
+<ul class="menu submenu" id="sub5" style="width: 250px;">
+<li><a class="menu" href="/en/search">Search graphic card (GPU)</a></li>
+<li><a class="menu" href="/en/psu_search">Search power supply</a></li>
+</ul>
+</li>
+<li class="sub" onClick="toggle_menu('sub1');" onMouseOver="toggle_menu('sub1',1);">
+<span class="menu" aria-haspopup="true">Benchmarks</span>
+<ul class="menu submenu" id="sub1" style="width: 400px;">
+<li><a class="menu" href="/en/gpu_benchmark-3dmark_time_spy_and_fire_strike-5">3DMark Benchmark (DirectX, Raytracing)</a></li><li><a class="menu" href="/en/gpu_benchmark-cyberpunk_2077-10">Cyberpunk 2077</a></li><li><a class="menu" href="/en/gpu_benchmark-shadow_of_the_tomb_raider-6">Shadow of the Tomb Raider</a></li><li><a class="menu" href="/en/gpu_benchmark-battlefield_5-1">Battlefield 5</a></li><li><a class="menu" href="/en/gpu_benchmark-gta_5_benchmark-11">GTA 5 Benchmark (Grand Theft Auto V)</a></li><li><a class="menu" href="/en/gpu_benchmark-geekbench_5_cuda_opencl_vulkan_metal-12">Geekbench 5 (CUDA, OpenCL, Vulkan, Metal)</a></li><li><a class="menu" href="/en/gpu_benchmark-crypto_mining_ethereum_hashrate-4">Crypto-Mining Ethereum Hashrate (MH/s)</a></li><li><a class="menu" href="/en/gpu_benchmark-crypto_mining_ergo_hashrate-9">Crypto-Mining Ergo Hashrate (MH/s)</a></li><li><a class="menu" href="/en/gpu_benchmark-crypto_mining_ravencoin_kawpow_hashrate-7">Crypto-Mining Ravencoin Hashrate (MH/s)</a></li><li><a class="menu" href="/en/gpu_benchmark-crypto_mining_vertcoin_hashrate-8">Crypto-Mining Vertcoin Hashrate (MH/s)</a></li><li><a class="menu" href="/en/gpu_benchmark-fp32-3">FP32 Performance (Single-precision TFLOPS)</a></li><li><a class="menu" href="gpu_lhr_list">GPU LHR (Low hashrate / light hashrate) list</a></li><li><a class="menu" href="benchmarks">show more results</a></li>
+</ul>
+</li>
+<li class="sub" onClick="toggle_menu('sub2');" onMouseOver="toggle_menu('sub2',1);">
+<span class="menu" aria-haspopup="true">GPUs</span>
+<ul class="menu submenu" id="sub2">
+<li><a class="menu" href="gpu_group-amd_radeon_rx_6700_xt-20">AMD Radeon RX 6700 XT</a></li><li><a class="menu" href="gpu_group-amd_radeon_rx_6800-9">AMD Radeon RX 6800</a></li><li><a class="menu" href="gpu_group-amd_radeon_rx_6800_xt-7">AMD Radeon RX 6800 XT</a></li><li><a class="menu" href="gpu_group-amd_radeon_rx_6900_xt-6">AMD Radeon RX 6900 XT</a></li><li><a class="menu" href="gpu_group-amd_radeon_rx_6950_xt-84">AMD Radeon RX 6950 XT</a></li><li><a class="menu" href="gpu_group-amd_radeon_rx_7600-23952">AMD Radeon RX 7600</a></li><li><a class="menu" href="gpu_group-amd_radeon_rx_7900_xt-10823">AMD Radeon RX 7900 XT</a></li><li><a class="menu" href="gpu_group-amd_radeon_rx_7900_xtx-10822">AMD Radeon RX 7900 XTX</a></li><li><a class="menu" href="gpu_group-nvidia_geforce_rtx_3080_ti-39">NVIDIA GeForce RTX 3080 Ti</a></li><li><a class="menu" href="gpu_group-nvidia_geforce_rtx_3090-1">NVIDIA GeForce RTX 3090</a></li><li><a class="menu" href="gpu_group-nvidia_geforce_rtx_3090_ti-72">NVIDIA GeForce RTX 3090 Ti</a></li><li><a class="menu" href="gpu_group-nvidia_geforce_rtx_4060-10850">NVIDIA GeForce RTX 4060</a></li><li><a class="menu" href="gpu_group-nvidia_geforce_rtx_4060_ti_16gb-23951">NVIDIA GeForce RTX 4060 TI (16GB)</a></li><li><a class="menu" href="gpu_group-nvidia_geforce_rtx_4060_ti_8gb-10851">NVIDIA GeForce RTX 4060 TI (8GB)</a></li><li><a class="menu" href="gpu_group-nvidia_geforce_rtx_4070-10852">NVIDIA GeForce RTX 4070</a></li><li><a class="menu" href="gpu_group-nvidia_geforce_rtx_4070_ti-10836">NVIDIA GeForce RTX 4070 Ti</a></li><li><a class="menu" href="gpu_group-nvidia_geforce_rtx_4080-97">NVIDIA GeForce RTX 4080</a></li><li><a class="menu" href="gpu_group-nvidia_geforce_rtx_4090-90">NVIDIA GeForce RTX 4090</a></li><li><a class="menu" href="gpus">show more results</a></li>
+</ul>
+</li>
+<li><a class="menu" target="_blank" href="https://www.monkey-community.com">Community</a></li>
+<li><a class="menu" href="https://www.cpu-monkey.com">CPU comparison</a></li>
+<li class="sub" style="padding-top: 11px; padding-bottom: 10px; margin-left: 40px; position: absolute; top: 0px; right: 225px;" onClick="toggle_menu('sub4');" onMouseOver="toggle_menu('sub4',1);">
+<span class="menu" aria-haspopup="true"><img style="height: 25px; vertical-align: middle; margin-top: 1px;" src="/images/globe.png" alt="Language selection"><span style="font-size: 18px; margin-left: 4px;">en</span></span>
+<ul class="menu submenu" style="margin-top: -1px; width: 150px;" id="sub4">
+<li><a class="menu" href="/de/">Deutsch</a></li><li><a class="menu" href="/en/">English</a></li><li><a class="menu" href="/es/">Español</a></li><li><a class="menu" href="/fr/">Français</a></li><li><a class="menu" href="/it/">Italiano</a></li><li><a class="menu" href="/ja/">Japanese</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div style="position: absolute; top: 11px; right: 34px;">
+<img alt="gpu-monkey" src="/images/logo_ukraine.png" width="147px" height="26px">
+</div>
+</div>
+<div id="header_mobile">
+<div id="header_mobile_inner">
+<div class="topnav">
+<div id="mobile_menu">
+<a class="clean" href="/en/">Comparison</a>
+<a class="clean" href="/en/search">Search graphic card (GPU)</a>
+<a class="clean" href="/en/psu_search">Search power supply</a>
+<a class="clean" href="/en/benchmarks">Benchmarks</a>
+<a class="clean" href="/en/gpus">GPUs</a>
+<a class="clean" href="https://www.cpu-monkey.com">CPU comparison</a>
+<a class="clean" href="https://www.check-mac.com">Apple product comparison</a>
+</div>
+<div id="mobile_lang">
+<a class="clean" href="/de/">Deutsch</a><a class="clean" href="/en/">English</a><a class="clean" href="/es/">Español</a><a class="clean" href="/fr/">Français</a><a class="clean" href="/it/">Italiano</a><a class="clean" href="/ja/">Japanese</a>
+</div>
+<a href="javascript:void(0);" class="icon_l clean" onclick="toggle_mobile_menu('mobile_menu')"><img src="/images/liste-96.png" width="40px" height="40px" alt="MENU" id="img_menu"></a>
+<a class="clean" href="https://www.gpu-monkey.com"><img src="/images/logo_ukraine.png" width="158px" height="28px" id="logo" alt="GPU-Monkey.com"></a>
+<a href="javascript:void(0);" class="icon_r clean" onclick="toggle_mobile_menu('mobile_lang')"><img src="/images/globe.png" width="35px" height="35px" alt="Language selection" id="img_lang"></a>
+</div>
+</div>
+</div>
+<div style="height: 45px;"></div>
+<div class="werb werb_top1">
+
+<div align="center" style="width: 33%;" data-freestar-ad="__336x280" id="gpumonkeycom_sf_atf_1">
+<script data-cfasync="false" type="text/javascript">
+                freestar.config.enabled_slots.push({ placementName: "gpumonkeycom_sf_atf_1", slotId: "gpumonkeycom_sf_atf_1" });
+              </script>
+</div>
+
+<div align="center" style="width: 33%;" data-freestar-ad="__336x280" id="gpumonkeycom_sf_atf_2">
+<script data-cfasync="false" type="text/javascript">
+                freestar.config.enabled_slots.push({ placementName: "gpumonkeycom_sf_atf_2", slotId: "gpumonkeycom_sf_atf_2" });
+              </script>
+</div>
+
+<div align="center" style="width: 33%;" data-freestar-ad="__336x280" id="gpumonkeycom_sf_atf_3">
+<script data-cfasync="false" type="text/javascript">
+                freestar.config.enabled_slots.push({ placementName: "gpumonkeycom_sf_atf_3", slotId: "gpumonkeycom_sf_atf_3" });
+              </script>
+</div>
+</div>
+<script src="/ajax/gpu_list.js" async></script>
+<script>
+	
+		function toggle_dropdown(gpu,check_visibility,show_images,mobile){
+            
+            start_value = (document.getElementById(gpu + '_input').value == '' && document.getElementById(gpu + '_input').placeholder != '' ? document.getElementById(gpu + '_input').placeholder : document.getElementById(gpu + '_input').value);
+
+            if(check_visibility == 0){
+                gpu_list(gpu,start_value,show_images,mobile);	
+            } else {	
+                if(document.getElementById(gpu + '_dropdown') && (document.getElementById(gpu + '_dropdown').style.visibility == 'hidden' ||    document.getElementById(gpu + '_dropdown').style.visibility == '')){
+                    gpu_list(gpu,start_value,show_images,mobile);		
+                } else {
+                    document.getElementById(gpu + '_dropdown').style.visibility = 'hidden';
+                }
+            }
+			
+		}
+		
+		function build_vs(){
+			document.getElementById('vs_a').href = 'compare_gpu-' + document.getElementById('gpu1_url_vs').value + '-vs-' + document.getElementById('gpu2_url_vs').value;
+			document.getElementById('vs_am').href = 'compare_gpu-' + document.getElementById('gpu1m_url_vs').value + '-vs-' + document.getElementById('gpu2m_url_vs').value;		
+		}
+	
+	</script>
+<div id="gpu_selection_desktop" style="position: relative;">
+<a id="vs_a" href="#">
+<div id="vs" class="button">
+<div style="position: absolute; top:32px; left: 0; right: 0; margin-left: auto; margin-right: auto; width: 100px;">VS</div>
+</div>
+</a>
+<div id="vs_linie"><img src="/images/linie.png" alt="" loading="lazy" style="border: 0px; width: 200px;"></div>
+
+<div class="half_col frame">
+<img id="gpu1_img" alt="gpu #1" src="/gpu/gigabyte_aorus_geforce_rtx_3080_xtreme_waterforce_10g.jpg" loading="lazy" style="border: 0px; height: 170px; margin-top: 40px; margin-bottom: 5px;">
+<br />
+<input type="hidden" id="gpu1_url_vs" value="gigabyte_aorus_geforce_rtx_3080_xtreme_waterforce_10g">
+<input type="text" class="gpu_input gpu_input_down_l" id="gpu1_input" maxlength="50" value="GIGABYTE AORUS GeForce RTX 3080 Xtreme Waterforce 10G" placeholder="GIGABYTE AORUS GeForce RTX 3080 Xtreme Waterforce 10G" spellcheck="false" onclick="toggle_dropdown('gpu1',1,1,0);" onKeyUp="toggle_dropdown('gpu1',0,1,0);" onFocus="this.value=''">
+<ul id="gpu1_dropdown" class="gpu_dropdown"></ul>
+
+<div style="margin-top: 50px; text-align: left;"><h4>Technical details</h4>hover over icons to get help</div>
+<table style="width: 100%; text-align: left; font-size: 22px; margin-top: 25px;">
+<tr>
+<td style="width: 54px;"><img src="/images/processor-48.png" loading="lazy" style="border: 0px; width: 32px; height: 32px;" alt="GPU frequency" title="GPU frequency"></td>
+<td style="width: 185px;"><span id="gpu1_freq">1.44 GHz</span></td>
+<td style="width: 54px;"><img src="/images/speedometer-48.png" loading="lazy" style="border: 0px; width: 32px; height: 32px;" alt="GPU Turbo frequency" title="GPU Turbo frequency"></td>
+<td><span id="gpu1_turbo">1.85 GHz</span></td>
+</tr>
+<tr>
+<td colspan="4" style="height: 5px;"></td>
+</tr>
+<tr>
+<td><img src="/images/memory-48.png" loading="lazy" style="border: 0px; width: 32px; height: 32px;" alt="Memory Size" title="Memory Size"></td>
+<td><span id="gpu1_memory">10 GB </span></td>
+<td><img src="/images/thermal.png" loading="lazy" style="border: 0px; margin-left: 1px; margin-top: 1px; width: 32px; height: 32px;" alt="TDP" title="TDP"></td>
+<td><span id="gpu1_tdp">320 W</span></td>
+</tr>
+<tr>
+<td colspan="4" style="height: 5px;"></td>
+</tr>
+<tr>
+<td><img src="/images/calendar-3-48.png" loading="lazy" style="border: 0px; width: 32px; height: 32px;" alt="Release date" title="Release date"></td>
+<td><span id="gpu1_release">Q4/2020</span></td>
+<td><img src="/images/price-tag-48.png" loading="lazy" style="border: 0px; width: 32px; height: 32px;" alt="Market price" title="Market price"></td>
+<td><span id="gpu1_price">699 $</span></td>
+</tr>
+</table>
+<a id="gpu1_button_a" href="gpu-gigabyte_aorus_geforce_rtx_3080_xtreme_waterforce_10g"><div title="show information for this gpu only" id="gpu1_button" class="button button_down" style="margin-top: -8px; margin-left: 165px;"></div></a>
+</div>
+
+<div class="half_col frame" style="float: right;">
+<img id="gpu2_img" alt="gpu #2" src="/gpu/nvidia_geforce_gt_730.jpg" loading="lazy" style="border: 0px; height: 170px; margin-top: 40px; margin-bottom: 5px;">
+<br />
+<input type="hidden" id="gpu2_url_vs" value="nvidia_geforce_gt_730">
+<input type="text" class="gpu_input gpu_input_down_r" id="gpu2_input" maxlength="50" value="NVIDIA GeForce GT 730" placeholder="NVIDIA GeForce GT 730" spellcheck="false" onclick="toggle_dropdown('gpu2',1,1,0);" onKeyUp="toggle_dropdown('gpu2',0,1,0);" onFocus="this.value=''">
+<ul id="gpu2_dropdown" class="gpu_dropdown"></ul>
+
+<div style="margin-top: 50px; text-align: left;"><h4>Technical details</h4>hover over icons to get help</div>
+<table style="width: 100%; text-align: left; font-size: 22px; margin-top: 25px;">
+<tr>
+<td style="width: 54px;"><img src="/images/processor-48.png" loading="lazy" style="border: 0px; width: 32px; height: 32px;" alt="GPU frequency" title="GPU frequency"></td>
+<td style="width: 185px;"><span id="gpu2_freq">0.90 GHz</span></td>
+<td style="width: 54px;"><img src="/images/speedometer-48.png" loading="lazy" style="border: 0px; width: 32px; height: 32px;" alt="GPU Turbo frequency" title="GPU Turbo frequency"></td>
+<td><span id="gpu2_turbo">0.90 GHz</span></td>
+</tr>
+<tr>
+<td colspan="4" style="height: 5px;"></td>
+</tr>
+ <tr>
+<td><img src="/images/memory-48.png" loading="lazy" style="border: 0px; width: 32px; height: 32px;" alt="Memory Size" title="Memory Size"></td>
+<td><span id="gpu2_memory">1 GB </span></td>
+<td><img src="/images/thermal.png" loading="lazy" style="border: 0px; margin-left: 1px; margin-top: 1px; width: 32px; height: 32px;" alt="TDP" title="TDP"></td>
+<td><span id="gpu2_tdp">38 W</span></td>
+</tr>
+<tr>
+<td colspan="4" style="height: 5px;"></td>
+</tr>
+<tr>
+<td><img src="/images/calendar-3-48.png" loading="lazy" style="border: 0px; width: 32px; height: 32px;" alt="Release date" title="Release date"></td>
+<td><span id="gpu2_release">Q2/2014</span></td>
+<td><img src="/images/price-tag-48.png" loading="lazy" style="border: 0px; width: 32px; height: 32px;" alt="Market price" title="Market price"></td>
+<td><span id="gpu2_price">59 $</span></td>
+</tr>
+</table>
+<a id="gpu2_button_a" href="gpu-nvidia_geforce_gt_730"><div title="show information for this gpu only" class="button button_down" id="gpu2_button" style="margin-top: -8px; margin-left: 165px;"></div></a>
+</div>
+</div>
+<div id="gpu_selection_mobile">
+<div style="float: left; width: 50%; text-align: center;">
+<div style="padding-left: 15px; padding-top: 40px;">
+<div style="display: table; overflow: hidden; height: 110px; max-height: 110px; width: 175px; vertical-align: middle;">
+<div style="display: table-cell; vertical-align: middle; text-align: center;">
+<div style="display: inline-block;">
+<img id="gpu1m_img" alt="GPU #1" src="/gpu/gigabyte_aorus_geforce_rtx_3080_xtreme_waterforce_10g.jpg" loading="lazy" style="border: 0px; display: block; max-width: 170px; max-height: 100px; width: auto; height: auto;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="float: right; width: 50%; text-align: center;">
+<div style="padding-left: 30px; padding-top: 40px;">
+<div style="display: table; overflow: hidden; height: 110px; max-height: 110px; width: 175px; vertical-align: middle;">
+<div style="display: table-cell; vertical-align: middle; text-align: center;">
+<div style="display: inline-block;">
+<img id="gpu2m_img" alt="GPU #2" src="/gpu/nvidia_geforce_gt_730.jpg" loading="lazy" style="border: 0px; display: block; max-width: 170px; max-height: 100px; width: auto; height: auto;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="float: left; width: 80%; padding-right: 20px; padding-left: 20px;">
+
+<div style="font-weight: bold; color: #000000; font-size: 20px; padding-left: 8px; margin-top: 20px;">Graphics card 1</div>
+<input type="hidden" id="gpu1m_url_vs" value="gigabyte_aorus_geforce_rtx_3080_xtreme_waterforce_10g">
+<input type="text" class="gpu_input gpu_input_down_l" id="gpu1m_input" maxlength="50" value="GIGABYTE AORUS GeForce RTX 3080 Xtreme Waterforce 10G" placeholder="GIGABYTE AORUS GeForce RTX 3080 Xtreme Waterforce 10G" spellcheck="false" onclick="toggle_dropdown('gpu1m',1,0,1);" onKeyUp="toggle_dropdown('gpu1m',0,0,1);" onFocus="this.value=''">
+<ul id="gpu1m_dropdown" class="gpu_dropdown"></ul>
+
+<div style="font-weight: bold; color: #000000; font-size: 20px; padding-left: 8px; margin-top: 25px;">Graphics card 2</div>
+<input type="hidden" id="gpu2m_url_vs" value="nvidia_geforce_gt_730">
+<input type="text" class="gpu_input gpu_input_down_l" id="gpu2m_input" maxlength="50" value="NVIDIA GeForce GT 730" placeholder="NVIDIA GeForce GT 730" spellcheck="false" onclick="toggle_dropdown('gpu2m',1,0,1);" onKeyUp="toggle_dropdown('gpu2m',0,0,1);" onFocus="this.value=''">
+<ul id="gpu2m_dropdown" class="gpu_dropdown"></ul>
+
+<div style="float: left; 80%; margin-top: 20px;">
+<a id="vs_am" class="clean" style="color: #ffffff;" href="#">
+<div class="button button_down" id="gpum_vs" style="color: #000000; background-color: #ff9700;">
+Compare both GPUs
+</div>
+</a>
+<a id="gpu1m_button_a" class="clean" style="color: #ffffff;" href="gpu-gigabyte_aorus_geforce_rtx_3080_xtreme_waterforce_10g" title="show information for this gpu only">
+<div class="button button_down" id="gpu1m_button">
+Graphics card 1 - details
+</div>
+</a>
+<a id="gpu2m_button_a" class="clean" style="color: #ffffff;" href="gpu-nvidia_geforce_gt_730" title="show information for this gpu only">
+<div class="button button_down" id="gpu2m_button">
+Graphics card 2 - details
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="full_col frame" id="start_frame">
+<div class="werb werb_start_mobile_top">
+
+<div align="center" data-freestar-ad="__336x280" id="gpumonkeycom_incontent_1_mobile">
+<script data-cfasync="false" type="text/javascript">
+            freestar.config.enabled_slots.push({ placementName: "gpumonkeycom_incontent_1_mobile", slotId: "gpumonkeycom_incontent_1_mobile" });
+          </script>
+</div>
+</div>
+<h1>GPU comparison / graphics card comparison 2023</h1>
+In our GPU / graphics card comparison, you can easily determine all the important data of a graphics card and, if you wish, compare them with a second graphics card. For this purpose, we have stored many benchmark results in our database, which will help you to classify the speed of a graphics card exactly.<br />
+<br />
+Since the benchmark results vary slightly from system to system and can of course also be influenced by other components such as the processor or the working memory, we have normalized our values. This makes our data easier to compare with each other and enables a better overview of the performance of a graphics card in the respective benchmark or game.
+<br><br>
+
+<div class="werb_start_video werb_player">
+<div id="FreeStarVideoAdContainer">
+<div id="freestar-video-parent">
+<div id="freestar-video-child"></div>
+</div>
+</div>
+</div>
+<h2 class="start_gpu_group">GPUs by group</h2>
+<div class="gpu_data_box">
+<a class="black" href="gpu_group-amd_radeon_rx_6700_xt-20">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon RX 6700 XT" loading="lazy" src="/images/manufacturer/amd.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>AMD Radeon RX 6700 XT</b><br><span class="data_group_small">12 GB GDDR6</span></div>
+</div>
+</a><a class="black" href="gpu_group-amd_radeon_rx_6800-9">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon RX 6800" loading="lazy" src="/images/manufacturer/amd.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>AMD Radeon RX 6800</b><br><span class="data_group_small">16 GB GDDR6</span></div>
+</div>
+</a><a class="black" href="gpu_group-amd_radeon_rx_6800_xt-7">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon RX 6800 XT" loading="lazy" src="/images/manufacturer/amd.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>AMD Radeon RX 6800 XT</b><br><span class="data_group_small">16 GB GDDR6</span></div>
+</div>
+</a><a class="black" href="gpu_group-amd_radeon_rx_6900_xt-6">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon RX 6900 XT" loading="lazy" src="/images/manufacturer/amd.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>AMD Radeon RX 6900 XT</b><br><span class="data_group_small">16 GB GDDR6</span></div>
+</div>
+</a><a class="black" href="gpu_group-amd_radeon_rx_6950_xt-84">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon RX 6950 XT" loading="lazy" src="/images/manufacturer/amd.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>AMD Radeon RX 6950 XT</b><br><span class="data_group_small">16 GB GDDR6</span></div>
+</div>
+</a><a class="black" href="gpu_group-amd_radeon_rx_7600-23952">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon RX 7600" loading="lazy" src="/images/manufacturer/amd.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>AMD Radeon RX 7600</b><br><span class="data_group_small">8 GB GDDR6</span></div>
+</div>
+</a><a class="black" href="gpu_group-amd_radeon_rx_7900_xt-10823">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon RX 7900 XT" loading="lazy" src="/images/manufacturer/amd.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>AMD Radeon RX 7900 XT</b><br><span class="data_group_small">20 GB GDDR6</span></div>
+</div>
+</a><a class="black" href="gpu_group-amd_radeon_rx_7900_xtx-10822">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon RX 7900 XTX" loading="lazy" src="/images/manufacturer/amd.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>AMD Radeon RX 7900 XTX</b><br><span class="data_group_small">24 GB GDDR6</span></div>
+</div>
+</a><a class="black" href="gpu_group-nvidia_geforce_rtx_3080_ti-39">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 3080 Ti" loading="lazy" src="/images/manufacturer/nvidia.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>NVIDIA GeForce RTX 3080 Ti</b><br><span class="data_group_small">12 GB GDDR6X</span></div>
+</div>
+</a><a class="black" href="gpu_group-nvidia_geforce_rtx_3090-1">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 3090" loading="lazy" src="/images/manufacturer/nvidia.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>NVIDIA GeForce RTX 3090</b><br><span class="data_group_small">24 GB GDDR6X</span></div>
+</div>
+</a><a class="black" href="gpu_group-nvidia_geforce_rtx_3090_ti-72">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 3090 Ti" loading="lazy" src="/images/manufacturer/nvidia.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>NVIDIA GeForce RTX 3090 Ti</b><br><span class="data_group_small">24 GB GDDR6X</span></div>
+</div>
+</a><a class="black" href="gpu_group-nvidia_geforce_rtx_4060-10850">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+ <img alt="NVIDIA GeForce RTX 4060" loading="lazy" src="/images/manufacturer/nvidia.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>NVIDIA GeForce RTX 4060</b><br><span class="data_group_small">8 GB GDDR6</span></div>
+</div>
+</a><a class="black" href="gpu_group-nvidia_geforce_rtx_4060_ti_16gb-23951">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 4060 TI (16GB)" loading="lazy" src="/images/manufacturer/nvidia.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>NVIDIA GeForce RTX 4060 TI (16GB)</b><br><span class="data_group_small">16 GB GDDR6</span></div>
+</div>
+</a><a class="black" href="gpu_group-nvidia_geforce_rtx_4060_ti_8gb-10851">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 4060 TI (8GB)" loading="lazy" src="/images/manufacturer/nvidia.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>NVIDIA GeForce RTX 4060 TI (8GB)</b><br><span class="data_group_small">8 GB GDDR6</span></div>
+</div>
+</a><a class="black" href="gpu_group-nvidia_geforce_rtx_4070-10852">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 4070" loading="lazy" src="/images/manufacturer/nvidia.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>NVIDIA GeForce RTX 4070</b><br><span class="data_group_small">12 GB GDDR6X</span></div>
+</div>
+</a><a class="black" href="gpu_group-nvidia_geforce_rtx_4070_ti-10836">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 4070 Ti" loading="lazy" src="/images/manufacturer/nvidia.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>NVIDIA GeForce RTX 4070 Ti</b><br><span class="data_group_small">12 GB GDDR6X</span></div>
+</div>
+</a><a class="black" href="gpu_group-nvidia_geforce_rtx_4080-97">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 4080" loading="lazy" src="/images/manufacturer/nvidia.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>NVIDIA GeForce RTX 4080</b><br><span class="data_group_small">16 GB GDDR6X</span></div>
+</div>
+</a><a class="black" href="gpu_group-nvidia_geforce_rtx_4090-90">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><picture style="height: 38px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 4090" loading="lazy" src="/images/manufacturer/nvidia.png" class="gpu_group_icon">
+</picture></div>
+<div class="gpu_group_data_c2"><b>NVIDIA GeForce RTX 4090</b><br><span class="data_group_small">24 GB GDDR6X</span></div>
+</div>
+</a><a class="black" href="gpus">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><img src="/images/processor-48.png" class="gpu_group_icon" alt=""></div>
+<div class="gpu_group_data_c2"><b>More GPU groups</b><br><span class="data_group_small">show more results</span></div>
+</div>
+</a>
+</div>
+<div class="werb werb_start_1">
+
+<div align="center" data-freestar-ad="__336x280 __336x280" id="gpumonkeycom_incontent_2">
+<script data-cfasync="false" type="text/javascript">
+            freestar.config.enabled_slots.push({ placementName: "gpumonkeycom_incontent_2", slotId: "gpumonkeycom_incontent_2" });
+          </script>
+</div>
+</div>
+<h2 class="start_gpu_group">GPU benchmark list</h2>
+In order to determine the performance of a graphics card, so-called "benchmarks" are carried out. The benchmark software carries out special calculations to determine the performance of a graphics card. We use so-called theoretical or synthetic benchmarks (e.g. 3D Mark) as well as real game benchmarks. To ensure real comparability of the results, we pay attention to the correct execution of the benchmarks as well as the condition of the graphics card and the system.<br />
+<br />
+We use the following benchmarks to measure the performance of a graphics card:
+<div class="gpu_data_box" style="margin-top: 15px;">
+<a class="black" href="gpu_benchmark-3dmark_time_spy_and_fire_strike-5">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><img alt="3DMark Benchmark" loading="lazy" src="/images/benchmarks/3dmark_benchmark_directx_raytracing.png" class="gpu_group_icon"></div>
+<div class="gpu_group_data_c2"><b>3DMark Benchmark</b><br><span class="data_group_small">4,591 entries</span></div>
+</div>
+</a><a class="black" href="gpu_benchmark-cyberpunk_2077-10">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><img alt="Cyberpunk 2077" loading="lazy" src="/images/benchmarks/cyberpunk_2077.png" class="gpu_group_icon"></div>
+<div class="gpu_group_data_c2"><b>Cyberpunk 2077</b><br><span class="data_group_small">2,415 entries</span></div>
+</div>
+</a><a class="black" href="gpu_benchmark-shadow_of_the_tomb_raider-6">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><img alt="Shadow of the Tomb Raider" loading="lazy" src="/images/benchmarks/shadow_of_the_tomb_raider.png" class="gpu_group_icon"></div>
+<div class="gpu_group_data_c2"><b>Shadow of the Tomb Raider</b><br><span class="data_group_small">4,516 entries</span></div>
+</div>
+</a><a class="black" href="gpu_benchmark-battlefield_5-1">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><img alt="Battlefield 5" loading="lazy" src="/images/benchmarks/battlefield_5.png" class="gpu_group_icon"></div>
+<div class="gpu_group_data_c2"><b>Battlefield 5</b><br><span class="data_group_small">3,910 entries</span></div>
+</div>
+</a><a class="black" href="gpu_benchmark-gta_5_benchmark-11">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><img alt="GTA 5 Benchmark" loading="lazy" src="/images/benchmarks/gta_5_benchmark_grand_theft_auto_v.png" class="gpu_group_icon"></div>
+<div class="gpu_group_data_c2"><b>GTA 5 Benchmark</b><br><span class="data_group_small">2,475 entries</span></div>
+</div>
+</a><a class="black" href="gpu_benchmark-geekbench_5_cuda_opencl_vulkan_metal-12">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><img alt="Geekbench 5" loading="lazy" src="/images/benchmarks/geekbench_5_cuda_opencl_vulkan_metal.png" class="gpu_group_icon"></div>
+<div class="gpu_group_data_c2"><b>Geekbench 5</b><br><span class="data_group_small">3,679 entries</span></div>
+</div>
+</a><a class="black" href="gpu_benchmark-crypto_mining_ethereum_hashrate-4">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><img alt="Crypto-Mining Ethereum Hashrate" loading="lazy" src="/images/benchmarks/crypto_mining_ethereum_hashrate_mh_s.png" class="gpu_group_icon"></div>
+<div class="gpu_group_data_c2"><b>Crypto-Mining Ethereum Hashrate</b><br><span class="data_group_small">3,409 entries</span></div>
+</div>
+</a><a class="black" href="gpu_benchmark-crypto_mining_ergo_hashrate-9">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><img alt="Crypto-Mining Ergo Hashrate" loading="lazy" src="/images/benchmarks/crypto_mining_ergo_hashrate_mh_s.png" class="gpu_group_icon"></div>
+<div class="gpu_group_data_c2"><b>Crypto-Mining Ergo Hashrate</b><br><span class="data_group_small">3,635 entries</span></div>
+</div>
+</a><a class="black" href="gpu_benchmark-crypto_mining_ravencoin_kawpow_hashrate-7">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><img alt="Crypto-Mining Ravencoin Hashrate" loading="lazy" src="/images/benchmarks/crypto_mining_ravencoin_hashrate_mh_s.png" class="gpu_group_icon"></div>
+<div class="gpu_group_data_c2"><b>Crypto-Mining Ravencoin Hashrate</b><br><span class="data_group_small">3,562 entries</span></div>
+</div>
+</a><a class="black" href="gpu_benchmark-crypto_mining_vertcoin_hashrate-8">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><img alt="Crypto-Mining Vertcoin Hashrate" loading="lazy" src="/images/benchmarks/crypto_mining_vertcoin_hashrate_mh_s.png" class="gpu_group_icon"></div>
+<div class="gpu_group_data_c2"><b>Crypto-Mining Vertcoin Hashrate</b><br><span class="data_group_small">2,441 entries</span></div>
+</div>
+</a><a class="black" href="gpu_benchmark-fp32-3">
+<div class="gpu_group_data">
+<div class="gpu_group_data_c1"><img alt="FP32 Performance" loading="lazy" src="/images/benchmarks/benchmark_3_name.png" class="gpu_group_icon"></div>
+<div class="gpu_group_data_c2"><b>FP32 Performance</b><br><span class="data_group_small">4,927 entries</span></div>
+</div>
+</a>
+</div>
+<div class="werb werb_start_2">
+
+<div align="center" data-freestar-ad="__336x280 __336x280" id="gpumonkeycom_incontent_3">
+<script data-cfasync="false" type="text/javascript">
+            freestar.config.enabled_slots.push({ placementName: "gpumonkeycom_incontent_3", slotId: "gpumonkeycom_incontent_3" });
+          </script>
+</div>
+</div>
+<h2>Last 20 GPU comparisons</h2>
+<table class="data">
+<tr>
+<td class="dt_rh dt_mobile_hide" style="width: 50px; height: 1px;"></td>
+<td style="width: 110px;"></td>
+<td></td>
+<td class="dt_mobile_hide" style="width: 165px;"></td>
+</tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">1.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/galax.webp" type="image/webp">
+<source srcset="/images/manufacturer/galax.png" type="image/png">
+<img alt="GALAX GeForce GTX 1070 Founders Edition" loading="lazy" src="/images/manufacturer/galax.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS ROG Strix Radeon RX 580 TOP-Edition" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-galax_geforce_gtx_1070_founders_edition-vs-asus_rog_strix_radeon_rx_580_top_edition">GALAX GeForce GTX 1070 Founders Edition vs ASUS ROG Strix Radeon RX 580 TOP-Edition</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">2.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/msi.webp" type="image/webp">
+<source srcset="/images/manufacturer/msi.png" type="image/png">
+<img alt="MSI GeForce RTX 3060 GAMING X 12G" loading="lazy" src="/images/manufacturer/msi.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS ROG Strix GeForce RTX 3060 Ti" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-msi_geforce_rtx_3060_gaming_x_12g-vs-asus_rog_strix_geforce_rtx_3060_ti">MSI GeForce RTX 3060 GAMING X 12G vs ASUS ROG Strix GeForce RTX 3060 Ti</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">3.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/xfx.webp" type="image/webp">
+<source srcset="/images/manufacturer/xfx.png" type="image/png">
+<img alt="XFX Radeon RX 6800 XT" loading="lazy" src="/images/manufacturer/xfx.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS Dual Radeon RX 6750 XT OC Edition" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-xfx_radeon_rx_6800_xt-vs-asus_dual_radeon_rx_6750_xt_oc_edition">XFX Radeon RX 6800 XT vs ASUS Dual Radeon RX 6750 XT OC Edition</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">4.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS ROG Strix GeForce RTX 2080" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 3080 12GB" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-asus_rog_strix_geforce_rtx_2080-vs-nvidia_geforce_rtx_3080_12gb">ASUS ROG Strix GeForce RTX 2080 vs NVIDIA GeForce RTX 3080 12GB</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">5.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS GeForce GTX 1650" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/manli.webp" type="image/webp">
+<source srcset="/images/manufacturer/manli.png" type="image/png">
+<img alt="MANLI GeForce GTX 1050 (F365G+N452-00)" loading="lazy" src="/images/manufacturer/manli.png" style="height: 38px; vertical-align: middle;">
+ </picture>
+</td><td><a href="compare_gpu-asus_geforce_gtx_1650-vs-manli_geforce_gtx_1050_f365g_plusn452_00">ASUS GeForce GTX 1650 vs MANLI GeForce GTX 1050 (F365G+N452-00)</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">6.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/galax.webp" type="image/webp">
+<source srcset="/images/manufacturer/galax.png" type="image/png">
+<img alt="GALAX GeForce GTX 1070 EX" loading="lazy" src="/images/manufacturer/galax.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/inno3d.webp" type="image/webp">
+<source srcset="/images/manufacturer/inno3d.png" type="image/png">
+<img alt="INNO3D GeForce RTX 3080 Twin X2 OC LHR" loading="lazy" src="/images/manufacturer/inno3d.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-galax_geforce_gtx_1070_ex-vs-inno3d_geforce_rtx_3080_twin_x2_oc_lhr">GALAX GeForce GTX 1070 EX vs INNO3D GeForce RTX 3080 Twin X2 OC LHR</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">7.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/galax.webp" type="image/webp">
+<source srcset="/images/manufacturer/galax.png" type="image/png">
+<img alt="GALAX GeForce GTX 1060 EXOC White 6GB" loading="lazy" src="/images/manufacturer/galax.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/gainward.webp" type="image/webp">
+<source srcset="/images/manufacturer/gainward.png" type="image/png">
+<img alt="Gainward GeForce RTX 3070 Phantom V1 LHR" loading="lazy" src="/images/manufacturer/gainward.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-galax_geforce_gtx_1060_exoc_white_6gb-vs-gainward_geforce_rtx_3070_phantom_v1_lhr">GALAX GeForce GTX 1060 EXOC White 6GB vs Gainward GeForce RTX 3070 Phantom V1 LHR</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">8.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 4060 Ti 8GB Founders Edition" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+ <source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 3050 Ti Laptop (Mobile) - 80 W" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-nvidia_geforce_rtx_4060_ti_8gb_founders_edition-vs-nvidia_geforce_rtx_3050_ti_laptop_mobile__80_w">NVIDIA GeForce RTX 4060 Ti 8GB Founders Edition vs NVIDIA GeForce RTX 3050 Ti Laptop (Mobile) - 80 W</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">9.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/gainward.webp" type="image/webp">
+<source srcset="/images/manufacturer/gainward.png" type="image/png">
+<img alt="Gainward GeForce RTX 3060 Ghost" loading="lazy" src="/images/manufacturer/gainward.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS TUF Gaming GeForce RTX 3060" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-gainward_geforce_rtx_3060_ghost-vs-asus_tuf_gaming_geforce_rtx_3060">Gainward GeForce RTX 3060 Ghost vs ASUS TUF Gaming GeForce RTX 3060</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">10.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/kfa2.webp" type="image/webp">
+<source srcset="/images/manufacturer/kfa2.png" type="image/png">
+<img alt="KFA2 GeForce GTX 980 Ti" loading="lazy" src="/images/manufacturer/kfa2.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/asrock.webp" type="image/webp">
+<source srcset="/images/manufacturer/asrock.png" type="image/png">
+<img alt="ASRock Radeon RX 570 Phantom Gaming U 8G OC" loading="lazy" src="/images/manufacturer/asrock.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-kfa2_geforce_gtx_980_ti-vs-asrock_radeon_rx_570_phantom_gaming_u_8g_oc">KFA2 GeForce GTX 980 Ti vs ASRock Radeon RX 570 Phantom Gaming U 8G OC</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">11.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asrock.webp" type="image/webp">
+<source srcset="/images/manufacturer/asrock.png" type="image/png">
+<img alt="ASRock Phantom Gaming D Radeon RX 580 8G OC" loading="lazy" src="/images/manufacturer/asrock.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 4060" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-asrock_phantom_gaming_d_radeon_rx_580_8g_oc-vs-nvidia_geforce_rtx_4060">ASRock Phantom Gaming D Radeon RX 580 8G OC vs NVIDIA GeForce RTX 4060</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">12.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/inno3d.webp" type="image/webp">
+<source srcset="/images/manufacturer/inno3d.png" type="image/png">
+<img alt="INNO3D GeForce GTX 1070 Twin X2 V3" loading="lazy" src="/images/manufacturer/inno3d.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/gainward.webp" type="image/webp">
+<source srcset="/images/manufacturer/gainward.png" type="image/png">
+<img alt="Gainward GeForce RTX 4070 Ti Phoenix" loading="lazy" src="/images/manufacturer/gainward.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-inno3d_geforce_gtx_1070_twin_x2_v3-vs-gainward_geforce_rtx_4070_ti_phoenix">INNO3D GeForce GTX 1070 Twin X2 V3 vs Gainward GeForce RTX 4070 Ti Phoenix</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">13.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/xfx.webp" type="image/webp">
+<source srcset="/images/manufacturer/xfx.png" type="image/png">
+<img alt="XFX Radeon RX 7900 XT" loading="lazy" src="/images/manufacturer/xfx.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/xfx.webp" type="image/webp">
+<source srcset="/images/manufacturer/xfx.png" type="image/png">
+<img alt="XFX Speedster MERC 319 Radeon RX 6900 XT Ultra Gaming" loading="lazy" src="/images/manufacturer/xfx.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-xfx_radeon_rx_7900_xt-vs-xfx_speedster_merc_319_radeon_rx_6900_xt_ultra_gaming">XFX Radeon RX 7900 XT vs XFX Speedster MERC 319 Radeon RX 6900 XT Ultra Gaming</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">14.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS TUF Gaming GeForce RTX 4070 Ti 12GB OC Edition" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/colorful.webp" type="image/webp">
+<source srcset="/images/manufacturer/colorful.png" type="image/png">
+<img alt="Colorful iGame GeForce RTX 4070 Ti Advanced OC-V" loading="lazy" src="/images/manufacturer/colorful.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-asus_tuf_gaming_geforce_rtx_4070_ti_12gb_oc_edition-vs-colorful_igame_geforce_rtx_4070_ti_advanced_oc_v">ASUS TUF Gaming GeForce RTX 4070 Ti 12GB OC Edition vs Colorful iGame GeForce RTX 4070 Ti Advanced OC-V</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">15.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon RX 6600" loading="lazy" src="/images/manufacturer/amd.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS ROG Strix Radeon RX 5600 XT" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-amd_radeon_rx_6600-vs-asus_rog_strix_radeon_rx_5600_xt">AMD Radeon RX 6600 vs ASUS ROG Strix Radeon RX 5600 XT</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">16.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/gigabyte.webp" type="image/webp">
+<source srcset="/images/manufacturer/gigabyte.png" type="image/png">
+<img alt="Gigabyte GeForce GTX 1650 GAMING OC 4G " loading="lazy" src="/images/manufacturer/gigabyte.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/sapphire.webp" type="image/webp">
+<source srcset="/images/manufacturer/sapphire.png" type="image/png">
+<img alt="Sapphire NITRO+ Radeon RX 570 4G G5 V3" loading="lazy" src="/images/manufacturer/sapphire.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-gigabyte_geforce_gtx_1650_gaming_oc_4g_-vs-sapphire_nitro_plus_radeon_rx_570_4g_g5_v3">Gigabyte GeForce GTX 1650 GAMING OC 4G vs Sapphire NITRO+ Radeon RX 570 4G G5 V3</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">17.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/gigabyte.webp" type="image/webp">
+<source srcset="/images/manufacturer/gigabyte.png" type="image/png">
+<img alt="GIGABYTE GeForce RTX 3060 Gaming OC 12G (rev. 2.0) LHR" loading="lazy" src="/images/manufacturer/gigabyte.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/xfx.webp" type="image/webp">
+<source srcset="/images/manufacturer/xfx.png" type="image/png">
+<img alt="XFX Speedster MERC 319 Radeon RX 6800 XT Core Gaming" loading="lazy" src="/images/manufacturer/xfx.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-gigabyte_geforce_rtx_3060_gaming_oc_12g_rev._2.0_lhr-vs-xfx_speedster_merc_319_radeon_rx_6800_xt_core_gaming">GIGABYTE GeForce RTX 3060 Gaming OC 12G (rev. 2.0) LHR vs XFX Speedster MERC 319 Radeon RX 6800 XT Core Gaming</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">18.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/msi.webp" type="image/webp">
+<source srcset="/images/manufacturer/msi.png" type="image/png">
+<img alt="MSI GeForce RTX 3060 VENTUS 2X 12G OC" loading="lazy" src="/images/manufacturer/msi.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/zotac.webp" type="image/webp">
+<source srcset="/images/manufacturer/zotac.png" type="image/png">
+<img alt="ZOTAC GAMING GeForce RTX 3060 Ti GDDR6X Twin Edge OC" loading="lazy" src="/images/manufacturer/zotac.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-msi_geforce_rtx_3060_ventus_2x_12g_oc-vs-zotac_gaming_geforce_rtx_3060_ti_gddr6x_twin_edge_oc">MSI GeForce RTX 3060 VENTUS 2X 12G OC vs ZOTAC GAMING GeForce RTX 3060 Ti GDDR6X Twin Edge OC</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">19.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS Dual GeForce RTX 3060 Ti Mini OC V2 LHR" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/colorful.webp" type="image/webp">
+<source srcset="/images/manufacturer/colorful.png" type="image/png">
+<img alt="Colorful iGame GeForce RTX 3060 Ti Advanced OC LHR-V" loading="lazy" src="/images/manufacturer/colorful.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-asus_dual_geforce_rtx_3060_ti_mini_oc_v2_lhr-vs-colorful_igame_geforce_rtx_3060_ti_advanced_oc_lhr_v">ASUS Dual GeForce RTX 3060 Ti Mini OC V2 LHR vs Colorful iGame GeForce RTX 3060 Ti Advanced OC LHR-V</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr><tr style="vertical-align: middle; "><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">20.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/pny.webp" type="image/webp">
+<source srcset="/images/manufacturer/pny.png" type="image/png">
+<img alt="PNY GeForce RTX 4090 24GB XLR8 Gaming VERTO EPIC-X" loading="lazy" src="/images/manufacturer/pny.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS Dual GeForce RTX 3050 8GB" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-pny_geforce_rtx_4090_24gb_xlr8_gaming_verto_epic_x-vs-asus_dual_geforce_rtx_3050_8gb">PNY GeForce RTX 4090 24GB XLR8 Gaming VERTO EPIC-X vs ASUS Dual GeForce RTX 3050 8GB</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2023-06-19 17:35</td></tr></table><br /><br />
+<h2>Trends - The 20 most popular GPUs last month</h2>
+<table class="data">
+<tr>
+<td class="dt_rh dt_mobile_hide" style="width: 55px; height: 1px;"></td>
+<td style="width: 70px;"></td>
+<td style="width: 575px;"></td>
+<td class="dt_mobile_hide"></td>
+<td class="dt_mobile_hide" style="width: 45px; text-align: right;"></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">1.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 3060" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-nvidia_geforce_rtx_3060">NVIDIA GeForce RTX 3060</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">23,755 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B08WM28PVH/ref=as_li_tl?ie=UTF8&creativeASIN=B08WM28PVH&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">2.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS Dual GeForce RTX 3060" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-asus_dual_geforce_rtx_3060">ASUS Dual GeForce RTX 3060</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">15,781 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B08WM28PVH/ref=as_li_tl?ie=UTF8&creativeASIN=B08WM28PVH&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">3.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 4070 Ti" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-nvidia_geforce_rtx_4070_ti">NVIDIA GeForce RTX 4070 Ti</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">15,779 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B096M7P5R6/ref=as_li_tl?ie=UTF8&creativeASIN=B096M7P5R6&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">4.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 4070 Founders Edition" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-nvidia_geforce_rtx_4070_founders_edition">NVIDIA GeForce RTX 4070 Founders Edition</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">15,020 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B0BZB9SKJ8/ref=as_li_tl?ie=UTF8&creativeASIN=B0BZB9SKJ8&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">5.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon RX 6800 XT" loading="lazy" src="/images/manufacturer/amd.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-amd_radeon_rx_6800_xt">AMD Radeon RX 6800 XT</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">14,432 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B08T9H18TJ/ref=as_li_tl?ie=UTF8&creativeASIN=B08T9H18TJ&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">6.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon RX 6700 XT" loading="lazy" src="/images/manufacturer/amd.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-amd_radeon_rx_6700_xt">AMD Radeon RX 6700 XT</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">14,204 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B08Y934HZQ/ref=as_li_tl?ie=UTF8&creativeASIN=B08Y934HZQ&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">7.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 3070 Founders Edition" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-nvidia_geforce_rtx_3070_founders_edition">NVIDIA GeForce RTX 3070 Founders Edition</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">12,881 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B097MYTZMW/ref=as_li_tl?ie=UTF8&creativeASIN=B097MYTZMW&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">8.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 3060 Ti (GDDR6X)" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-nvidia_geforce_rtx_3060_ti_gddr6x">NVIDIA GeForce RTX 3060 Ti (GDDR6X)</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">12,807 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://amzn.to/39G4lTu"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">9.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon RX 6600" loading="lazy" src="/images/manufacturer/amd.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-amd_radeon_rx_6600">AMD Radeon RX 6600</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">12,660 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09HHLX543/ref=as_li_tl?ie=UTF8&creativeASIN=B09HHLX543&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">10.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/msi.webp" type="image/webp">
+<source srcset="/images/manufacturer/msi.png" type="image/png">
+<img alt="MSI GeForce RTX 3060 GAMING X 12G" loading="lazy" src="/images/manufacturer/msi.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-msi_geforce_rtx_3060_gaming_x_12g">MSI GeForce RTX 3060 GAMING X 12G</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">12,421 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B08WM28PVH/ref=as_li_tl?ie=UTF8&creativeASIN=B08WM28PVH&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">11.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS Dual GeForce RTX 3070" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-asus_dual_geforce_rtx_3070">ASUS Dual GeForce RTX 3070</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">11,352 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B097MYTZMW/ref=as_li_tl?ie=UTF8&creativeASIN=B097MYTZMW&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">12.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS Dual GeForce RTX 3060 Ti" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-asus_dual_geforce_rtx_3060_ti">ASUS Dual GeForce RTX 3060 Ti</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">10,828 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B099N59B14/ref=as_li_tl?ie=UTF8&creativeASIN=B099N59B14&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">13.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/gigabyte.webp" type="image/webp">
+<source srcset="/images/manufacturer/gigabyte.png" type="image/png">
+<img alt="GIGABYTE GeForce RTX 3060 Gaming OC 12G" loading="lazy" src="/images/manufacturer/gigabyte.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-gigabyte_geforce_rtx_3060_gaming_oc_12g">GIGABYTE GeForce RTX 3060 Gaming OC 12G</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">10,788 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B08WM28PVH/ref=as_li_tl?ie=UTF8&creativeASIN=B08WM28PVH&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">14.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS Dual GeForce RTX 4070 12GB" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-asus_dual_geforce_rtx_4070_12gb">ASUS Dual GeForce RTX 4070 12GB</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">9,939 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B0BZB9SKJ8/ref=as_li_tl?ie=UTF8&creativeASIN=B0BZB9SKJ8&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">15.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon RX 6650 XT" loading="lazy" src="/images/manufacturer/amd.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-amd_radeon_rx_6650_xt">AMD Radeon RX 6650 XT</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">9,933 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09VYG2JTL/ref=as_li_tl?ie=UTF8&creativeASIN=B09VYG2JTL&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">16.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce GTX 1660 SUPER" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-nvidia_geforce_gtx_1660_super">NVIDIA GeForce GTX 1660 SUPER</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">9,894 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B07ZPM2BVR/ref=as_li_tl?ie=UTF8&creativeASIN=B07ZPM2BVR&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">17.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon RX 6950 XT" loading="lazy" src="/images/manufacturer/amd.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-amd_radeon_rx_6950_xt">AMD Radeon RX 6950 XT</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">9,721 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09VYDTVGY/ref=as_li_tl?ie=UTF8&creativeASIN=B09VYDTVGY&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+ </button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">18.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 4090 Founders Edition" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-nvidia_geforce_rtx_4090_founders_edition">NVIDIA GeForce RTX 4090 Founders Edition</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">9,685 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B0BG959RCF/ref=as_li_tl?ie=UTF8&creativeASIN=B0BG959RCF&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">19.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 3050" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-nvidia_geforce_rtx_3050">NVIDIA GeForce RTX 3050</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">9,608 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09Q31V6NH/ref=as_li_tl?ie=UTF8&creativeASIN=B09Q31V6NH&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">20.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 5px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce GTX 1070" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle; margin-right: 5px;">
+</picture>
+</td><td><a href="gpu-nvidia_geforce_gtx_1070">NVIDIA GeForce GTX 1070</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">9,393 clicks</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B097MYTZMW/ref=as_li_tl?ie=UTF8&creativeASIN=B097MYTZMW&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></tr></table><br /><br />
+<div class="werb werb_start_3">
+
+<div align="center" data-freestar-ad="__336x280 __336x280" id="gpumonkeycom_incontent_4">
+<script data-cfasync="false" type="text/javascript">
+            freestar.config.enabled_slots.push({ placementName: "gpumonkeycom_incontent_4", slotId: "gpumonkeycom_incontent_4" });
+          </script>
+</div>
+</div>
+<h2>TOP 10 comparisons by clicks</h2>
+<table class="data">
+<tr>
+<td class="dt_rh dt_mobile_hide" style="width: 55px; height: 1px;"></td>
+<td style="width: 150px;"></td>
+<td style="width: 550px;"></td>
+<td class="dt_mobile_hide"></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">1.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/msi.webp" type="image/webp">
+<source srcset="/images/manufacturer/msi.png" type="image/png">
+<img alt="MSI GeForce RTX 3080 GAMING Z TRIO 10G" loading="lazy" src="/images/manufacturer/msi.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/msi.webp" type="image/webp">
+<source srcset="/images/manufacturer/msi.png" type="image/png">
+<img alt="MSI GeForce RTX 3080 GAMING X TRIO 10G" loading="lazy" src="/images/manufacturer/msi.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-msi_geforce_rtx_3080_gaming_z_trio_10g-vs-msi_geforce_rtx_3080_gaming_x_trio_10g">MSI GeForce RTX 3080 GAMING Z TRIO 10G vs MSI GeForce RTX 3080 GAMING X TRIO 10G</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">39,826 clicks</td></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">2.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/msi.webp" type="image/webp">
+<source srcset="/images/manufacturer/msi.png" type="image/png">
+<img alt="MSI GeForce RTX 3060 VENTUS 2X 12G" loading="lazy" src="/images/manufacturer/msi.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/msi.webp" type="image/webp">
+<source srcset="/images/manufacturer/msi.png" type="image/png">
+<img alt="MSI GeForce RTX 3060 GAMING X 12G" loading="lazy" src="/images/manufacturer/msi.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-msi_geforce_rtx_3060_ventus_2x_12g-vs-msi_geforce_rtx_3060_gaming_x_12g">MSI GeForce RTX 3060 VENTUS 2X 12G vs MSI GeForce RTX 3060 GAMING X 12G</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">34,063 clicks</td></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">3.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS TUF Gaming GeForce RTX 3070 Ti" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS ROG Strix GeForce RTX 3070 Ti OC Edition" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-asus_tuf_gaming_geforce_rtx_3070_ti-vs-asus_rog_strix_geforce_rtx_3070_ti_oc_edition">ASUS TUF Gaming GeForce RTX 3070 Ti vs ASUS ROG Strix GeForce RTX 3070 Ti OC Edition</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">33,890 clicks</td></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">4.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/gigabyte.webp" type="image/webp">
+<source srcset="/images/manufacturer/gigabyte.png" type="image/png">
+<img alt="GIGABYTE GeForce RTX 3060 Eagle OC 12G" loading="lazy" src="/images/manufacturer/gigabyte.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/gigabyte.webp" type="image/webp">
+<source srcset="/images/manufacturer/gigabyte.png" type="image/png">
+<img alt="GIGABYTE GeForce RTX 3060 Gaming OC 12G" loading="lazy" src="/images/manufacturer/gigabyte.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-gigabyte_geforce_rtx_3060_eagle_oc_12g-vs-gigabyte_geforce_rtx_3060_gaming_oc_12g">GIGABYTE GeForce RTX 3060 Eagle OC 12G vs GIGABYTE GeForce RTX 3060 Gaming OC 12G</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">29,505 clicks</td></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">5.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/msi.webp" type="image/webp">
+<source srcset="/images/manufacturer/msi.png" type="image/png">
+<img alt="MSI GeForce RTX 3070 Gaming Z Trio 8G" loading="lazy" src="/images/manufacturer/msi.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/msi.webp" type="image/webp">
+<source srcset="/images/manufacturer/msi.png" type="image/png">
+<img alt="MSI GeForce RTX 3070 Gaming X Trio 8G" loading="lazy" src="/images/manufacturer/msi.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-msi_geforce_rtx_3070_gaming_z_trio_8g-vs-msi_geforce_rtx_3070_gaming_x_trio_8g">MSI GeForce RTX 3070 Gaming Z Trio 8G vs MSI GeForce RTX 3070 Gaming X Trio 8G</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">28,817 clicks</td></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">6.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS TUF Gaming GeForce RTX 3060 OC Edition" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS ROG Strix GeForce RTX 3060 OC Edition" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-asus_tuf_gaming_geforce_rtx_3060_oc_edition-vs-asus_rog_strix_geforce_rtx_3060_oc_edition">ASUS TUF Gaming GeForce RTX 3060 OC Edition vs ASUS ROG Strix GeForce RTX 3060 OC Edition</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">28,772 clicks</td></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">7.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS TUF Gaming GeForce RTX 3070 OC" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS ROG Strix GeForce RTX 3070 OC" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-asus_tuf_gaming_geforce_rtx_3070_oc-vs-asus_rog_strix_geforce_rtx_3070_oc">ASUS TUF Gaming GeForce RTX 3070 OC vs ASUS ROG Strix GeForce RTX 3070 OC</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">26,470 clicks</td></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">8.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS ROG Strix GeForce RTX 3090 OC" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce RTX 3090 Founders Edition" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-asus_rog_strix_geforce_rtx_3090_oc-vs-nvidia_geforce_rtx_3090_founders_edition">ASUS ROG Strix GeForce RTX 3090 OC vs NVIDIA GeForce RTX 3090 Founders Edition</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">25,233 clicks</td></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">9.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/xfx.webp" type="image/webp">
+<source srcset="/images/manufacturer/xfx.png" type="image/png">
+<img alt="XFX Speedster SWFT 319 Radeon RX 6800 XT CORE" loading="lazy" src="/images/manufacturer/xfx.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/xfx.webp" type="image/webp">
+<source srcset="/images/manufacturer/xfx.png" type="image/png">
+<img alt="XFX Speedster MERC 319 Radeon RX 6800 XT Black Gaming" loading="lazy" src="/images/manufacturer/xfx.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-xfx_speedster_swft_319_radeon_rx_6800_xt_core-vs-xfx_speedster_merc_319_radeon_rx_6800_xt_black_gaming">XFX Speedster SWFT 319 Radeon RX 6800 XT CORE vs XFX Speedster MERC 319 Radeon RX 6800 XT Black Gaming</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">23,442 clicks</td></tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">10.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/msi.webp" type="image/webp">
+<source srcset="/images/manufacturer/msi.png" type="image/png">
+<img alt="MSI GeForce RTX 3060 GAMING X 12G" loading="lazy" src="/images/manufacturer/msi.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+<picture style="height: 38px; vertical-align: middle;">
+<source srcset="/images/manufacturer/zotac.webp" type="image/webp">
+<source srcset="/images/manufacturer/zotac.png" type="image/png">
+<img alt="ZOTAC GAMING GeForce RTX 3060 Twin Edge OC" loading="lazy" src="/images/manufacturer/zotac.png" style="height: 38px; vertical-align: middle;">
+</picture>
+</td><td><a href="compare_gpu-msi_geforce_rtx_3060_gaming_x_12g-vs-zotac_gaming_geforce_rtx_3060_twin_edge_oc">MSI GeForce RTX 3060 GAMING X 12G vs ZOTAC GAMING GeForce RTX 3060 Twin Edge OC</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">23,120 clicks</td></tr></table><br /><br />
+<h2>TOP 10 GPUs by benchmark results</h2>
+<table class="data">
+<tr>
+<td class="dt_rh dt_mobile_hide" style="width: 55px; height: 1px;"></td>
+<td style="width: 60px;"></td>
+<td style="width: 600px;"></td>
+<td class="dt_mobile_hide"></td>
+<td class="dt_mobile_hide" style="width: 45px; text-align: right;"></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">1.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/pny.webp" type="image/webp">
+<source srcset="/images/manufacturer/pny.png" type="image/png">
+<img alt="PNY NVIDIA RTX 6000 Ada Generation" loading="lazy" src="/images/manufacturer/pny.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-pny_nvidia_rtx_6000_ada_generation">PNY NVIDIA RTX 6000 Ada Generation</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">91.10 TFLOPS</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://amzn.to/39G4lTu"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">2.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA RTX 6000 Ada" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-nvidia_rtx_6000_ada">NVIDIA RTX 6000 Ada</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">91.10 TFLOPS</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://amzn.to/39G4lTu"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">3.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS ROG Strix GeForce RTX 4090 White OC Edition" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-asus_rog_strix_geforce_rtx_4090_white_oc_edition">ASUS ROG Strix GeForce RTX 4090 White OC Edition</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">86.51 TFLOPS</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B0BG959RCF/ref=as_li_tl?ie=UTF8&creativeASIN=B0BG959RCF&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">4.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/colorful.webp" type="image/webp">
+<source srcset="/images/manufacturer/colorful.png" type="image/png">
+<img alt="Colorful iGame GeForce RTX 4090 Neptune OC-V" loading="lazy" src="/images/manufacturer/colorful.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-colorful_igame_geforce_rtx_4090_neptune_oc_v">Colorful iGame GeForce RTX 4090 Neptune OC-V</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">86.51 TFLOPS</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B0BG959RCF/ref=as_li_tl?ie=UTF8&creativeASIN=B0BG959RCF&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">5.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/msi.webp" type="image/webp">
+<source srcset="/images/manufacturer/msi.png" type="image/png">
+<img alt="MSI GeForce RTX 4090 SUPRIM LIQUID X 24G" loading="lazy" src="/images/manufacturer/msi.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-msi_geforce_rtx_4090_suprim_liquid_x_24g">MSI GeForce RTX 4090 SUPRIM LIQUID X 24G</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">86.51 TFLOPS</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B0BG959RCF/ref=as_li_tl?ie=UTF8&creativeASIN=B0BG959RCF&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">6.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS ROG Strix GeForce RTX 4090 OC Edition" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-asus_rog_strix_geforce_rtx_4090_oc_edition">ASUS ROG Strix GeForce RTX 4090 OC Edition</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">86.51 TFLOPS</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B0BG959RCF/ref=as_li_tl?ie=UTF8&creativeASIN=B0BG959RCF&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">7.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/msi.webp" type="image/webp">
+<source srcset="/images/manufacturer/msi.png" type="image/png">
+<img alt="MSI GeForce RTX 4090 SUPRIM X 24G" loading="lazy" src="/images/manufacturer/msi.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-msi_geforce_rtx_4090_suprim_x_24g">MSI GeForce RTX 4090 SUPRIM X 24G</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">86.51 TFLOPS</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B0BG959RCF/ref=as_li_tl?ie=UTF8&creativeASIN=B0BG959RCF&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">8.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS ROG Strix LC GeForce RTX 4090 OC" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-asus_rog_strix_lc_geforce_rtx_4090_oc">ASUS ROG Strix LC GeForce RTX 4090 OC</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">86.51 TFLOPS</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B0BG959RCF/ref=as_li_tl?ie=UTF8&creativeASIN=B0BG959RCF&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">9.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/colorful.webp" type="image/webp">
+<source srcset="/images/manufacturer/colorful.png" type="image/png">
+<img alt="Colorful iGame GeForce RTX 4090 Vulcan OC-V" loading="lazy" src="/images/manufacturer/colorful.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-colorful_igame_geforce_rtx_4090_vulcan_oc_v">Colorful iGame GeForce RTX 4090 Vulcan OC-V</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">86.02 TFLOPS</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B0BG959RCF/ref=as_li_tl?ie=UTF8&creativeASIN=B0BG959RCF&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">10.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/palit.webp" type="image/webp">
+<source srcset="/images/manufacturer/palit.png" type="image/png">
+<img alt="Palit GeForce RTX 4090 GameRock OC" loading="lazy" src="/images/manufacturer/palit.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-palit_geforce_rtx_4090_gamerock_oc">Palit GeForce RTX 4090 GameRock OC</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">85.53 TFLOPS</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B0BG959RCF/ref=as_li_tl?ie=UTF8&creativeASIN=B0BG959RCF&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr></table><br /><br />
+<div class="werb werb_start_4">
+
+<div align="center" data-freestar-ad="__336x280 __336x280" id="gpumonkeycom_incontent_5">
+<script data-cfasync="false" type="text/javascript">
+                freestar.config.enabled_slots.push({ placementName: "gpumonkeycom_incontent_5", slotId: "gpumonkeycom_incontent_5" });
+              </script>
+</div>
+</div>
+<h2>The 10 most expensive graphics cards</h2>
+<table class="data">
+<tr>
+<td class="dt_rh dt_mobile_hide" style="width: 55px; height: 1px;"></td>
+<td style="width: 68px;"></td>
+<td style="width: 600px;"></td>
+<td class="dt_mobile_hide"></td>
+<td class="dt_mobile_hide" style="width: 45px; text-align: right;"></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">1.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/pny.webp" type="image/webp">
+<source srcset="/images/manufacturer/pny.png" type="image/png">
+<img alt="PNY NVIDIA RTX 6000 Ada Generation" loading="lazy" src="/images/manufacturer/pny.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-pny_nvidia_rtx_6000_ada_generation">PNY NVIDIA RTX 6000 Ada Generation</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">7,349 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://amzn.to/39G4lTu"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">2.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/pny.webp" type="image/webp">
+<source srcset="/images/manufacturer/pny.png" type="image/png">
+<img alt="PNY RTX A6000" loading="lazy" src="/images/manufacturer/pny.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-pny_rtx_a6000">PNY RTX A6000</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">4,649 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B08NWGS4X1/ref=as_li_tl?ie=UTF8&creativeASIN=B08NWGS4X1&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">3.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA RTX A6000" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-nvidia_rtx_a6000">NVIDIA RTX A6000</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">4,649 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B08NWGS4X1/ref=as_li_tl?ie=UTF8&creativeASIN=B08NWGS4X1&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">4.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon Pro W7900" loading="lazy" src="/images/manufacturer/amd.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-amd_radeon_pro_w7900">AMD Radeon Pro W7900</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">3,999 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://amzn.to/39G4lTu"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">5.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/pny.webp" type="image/webp">
+<source srcset="/images/manufacturer/pny.png" type="image/png">
+<img alt="PNY RTX A5500" loading="lazy" src="/images/manufacturer/pny.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-pny_rtx_a5500">PNY RTX A5500</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">3,600 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B08NWGS4X1/ref=as_li_tl?ie=UTF8&creativeASIN=B08NWGS4X1&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">6.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/pny.webp" type="image/webp">
+<source srcset="/images/manufacturer/pny.png" type="image/png">
+<img alt="PNY RTX A5000" loading="lazy" src="/images/manufacturer/pny.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-pny_rtx_a5000">PNY RTX A5000</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2,500 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B098R6RKXL/ref=as_li_tl?ie=UTF8&creativeASIN=B098R6RKXL&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">7.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/amd.webp" type="image/webp">
+<source srcset="/images/manufacturer/amd.png" type="image/png">
+<img alt="AMD Radeon Pro W7800" loading="lazy" src="/images/manufacturer/amd.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-amd_radeon_pro_w7800">AMD Radeon Pro W7800</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2,499 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://amzn.to/39G4lTu"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+ </tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">8.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/evga.webp" type="image/webp">
+<source srcset="/images/manufacturer/evga.png" type="image/png">
+<img alt="EVGA GeForce RTX 3090 KINGPIN HYDRO COPPER GAMING" loading="lazy" src="/images/manufacturer/evga.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-evga_geforce_rtx_3090_kingpin_hydro_copper_gaming">EVGA GeForce RTX 3090 KINGPIN HYDRO COPPER GAMING</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2,320 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B08HN51T8Q/ref=as_li_tl?ie=UTF8&creativeASIN=B08HN51T8Q&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">9.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS ROG Strix GeForce RTX 3090 GUNDAM EDITION" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-asus_rog_strix_geforce_rtx_3090_gundam_edition">ASUS ROG Strix GeForce RTX 3090 GUNDAM EDITION</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2,199 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B08HN51T8Q/ref=as_li_tl?ie=UTF8&creativeASIN=B08HN51T8Q&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">10.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/msi.webp" type="image/webp">
+<source srcset="/images/manufacturer/msi.png" type="image/png">
+<img alt="MSI GeForce RTX 4090 SUPRIM LIQUID X 24G" loading="lazy" src="/images/manufacturer/msi.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-msi_geforce_rtx_4090_suprim_liquid_x_24g">MSI GeForce RTX 4090 SUPRIM LIQUID X 24G</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">2,129 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B0BG959RCF/ref=as_li_tl?ie=UTF8&creativeASIN=B0BG959RCF&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr></table><br /><br />
+<h2>The 10 cheapest graphics cards</h2>
+<table class="data">
+<tr>
+<td class="dt_rh dt_mobile_hide" style="width: 55px; height: 1px;"></td>
+<td style="width: 68px;"></td>
+<td style="width: 600px;"></td>
+<td class="dt_mobile_hide"></td>
+<td class="dt_mobile_hide" style="width: 45px; text-align: right;"></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">1.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS GeForce GT 730 2GB DDR3 BRK EVO" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-asus_geforce_gt_730_2gb_ddr3_brk_evo">ASUS GeForce GT 730 2GB DDR3 BRK EVO</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">59 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09GP8989B/ref=as_li_tl?ie=UTF8&creativeASIN=B09GP8989B&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">2.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS GeForce GT 730 2GB DDR3 EVO" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-asus_geforce_gt_730_2gb_ddr3_evo">ASUS GeForce GT 730 2GB DDR3 EVO</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">59 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09GP8989B/ref=as_li_tl?ie=UTF8&creativeASIN=B09GP8989B&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">3.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS GeForce GT 730 2GB GDDR5" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-asus_geforce_gt_730_2gb_gddr5">ASUS GeForce GT 730 2GB GDDR5</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">59 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09GP8989B/ref=as_li_tl?ie=UTF8&creativeASIN=B09GP8989B&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">4.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS GeForce GT 730" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-asus_geforce_gt_730">ASUS GeForce GT 730</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">59 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09GP8989B/ref=as_li_tl?ie=UTF8&creativeASIN=B09GP8989B&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">5.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/asus.webp" type="image/webp">
+<source srcset="/images/manufacturer/asus.png" type="image/png">
+<img alt="ASUS GeForce GT 730 2GD5" loading="lazy" src="/images/manufacturer/asus.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-asus_geforce_gt_730_2gd5">ASUS GeForce GT 730 2GD5</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">59 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09GP8989B/ref=as_li_tl?ie=UTF8&creativeASIN=B09GP8989B&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">6.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/colorful.webp" type="image/webp">
+<source srcset="/images/manufacturer/colorful.png" type="image/png">
+<img alt="Colorful GeForce GT730K 2GD3-V" loading="lazy" src="/images/manufacturer/colorful.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-colorful_geforce_gt730k_2gd3_v">Colorful GeForce GT730K 2GD3-V</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">59 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09GP8989B/ref=as_li_tl?ie=UTF8&creativeASIN=B09GP8989B&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">7.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/colorful.webp" type="image/webp">
+<source srcset="/images/manufacturer/colorful.png" type="image/png">
+<img alt="Colorful GeForce GT730K 4GD3-V" loading="lazy" src="/images/manufacturer/colorful.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-colorful_geforce_gt730k_4gd3_v">Colorful GeForce GT730K 4GD3-V</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">59 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09GP8989B/ref=as_li_tl?ie=UTF8&creativeASIN=B09GP8989B&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">8.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/colorful.webp" type="image/webp">
+<source srcset="/images/manufacturer/colorful.png" type="image/png">
+<img alt="Colorful GeForce GT730K 4GD3 V2-V" loading="lazy" src="/images/manufacturer/colorful.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-colorful_geforce_gt730k_4gd3_v2_v">Colorful GeForce GT730K 4GD3 V2-V</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">59 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09GP8989B/ref=as_li_tl?ie=UTF8&creativeASIN=B09GP8989B&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">9.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/colorful.webp" type="image/webp">
+<source srcset="/images/manufacturer/colorful.png" type="image/png">
+<img alt="Colorful GeForce GT730K LP 4GD3-V" loading="lazy" src="/images/manufacturer/colorful.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-colorful_geforce_gt730k_lp_4gd3_v">Colorful GeForce GT730K LP 4GD3-V</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">59 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09GP8989B/ref=as_li_tl?ie=UTF8&creativeASIN=B09GP8989B&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">10.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+ <source srcset="/images/manufacturer/powercolor.webp" type="image/webp">
+<source srcset="/images/manufacturer/powercolor.png" type="image/png">
+<img alt="PowerColor Red Dragon Radeon RX 550 2GB GDDR5 OC V3" loading="lazy" src="/images/manufacturer/powercolor.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-powercolor_red_dragon_radeon_rx_550_2gb_gddr5_oc_v3">PowerColor Red Dragon Radeon RX 550 2GB GDDR5 OC V3</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">69 $</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B08VHWFWSD/ref=as_li_tl?ie=UTF8&creativeASIN=B08VHWFWSD&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr></table><br /><br />
+<h2>The 10 most energy efficient GPUs (by TDP)</h2>
+<table class="data">
+<tr>
+<td class="dt_rh dt_mobile_hide" style="width: 55px; height: 1px;"></td>
+<td style="width: 68px;"></td>
+<td style="width: 600px;"></td>
+<td class="dt_mobile_hide"></td>
+<td class="dt_mobile_hide" style="width: 45px; text-align: right;"></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">1.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce GT 710" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-nvidia_geforce_gt_710">NVIDIA GeForce GT 710</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">19 W TDP</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B01AZ7W88O/ref=as_li_tl?ie=UTF8&creativeASIN=B01AZ7W88O&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">2.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/palit.webp" type="image/webp">
+<source srcset="/images/manufacturer/palit.png" type="image/png">
+<img alt="Palit GeForce GT 1030 DDR4" loading="lazy" src="/images/manufacturer/palit.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-palit_geforce_gt_1030_ddr4">Palit GeForce GT 1030 DDR4</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">20 W TDP</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09Q31V6NH/ref=as_li_tl?ie=UTF8&creativeASIN=B09Q31V6NH&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">3.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/nvidia.webp" type="image/webp">
+<source srcset="/images/manufacturer/nvidia.png" type="image/png">
+<img alt="NVIDIA GeForce GT 1030 DDR4" loading="lazy" src="/images/manufacturer/nvidia.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-nvidia_geforce_gt_1030_ddr4">NVIDIA GeForce GT 1030 DDR4</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">20 W TDP</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09Q31V6NH/ref=as_li_tl?ie=UTF8&creativeASIN=B09Q31V6NH&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">4.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/colorful.webp" type="image/webp">
+<source srcset="/images/manufacturer/colorful.png" type="image/png">
+<img alt="Colorful GeForce GT 1030 2G V6-V DDR4" loading="lazy" src="/images/manufacturer/colorful.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-colorful_geforce_gt_1030_2g_v6_v_ddr4">Colorful GeForce GT 1030 2G V6-V DDR4</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">30 W TDP</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09Q31V6NH/ref=as_li_tl?ie=UTF8&creativeASIN=B09Q31V6NH&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">5.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/evga.webp" type="image/webp">
+<source srcset="/images/manufacturer/evga.png" type="image/png">
+<img alt="EVGA GeForce GT 1030 DDR4" loading="lazy" src="/images/manufacturer/evga.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-evga_geforce_gt_1030_ddr4">EVGA GeForce GT 1030 DDR4</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">30 W TDP</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09Q31V6NH/ref=as_li_tl?ie=UTF8&creativeASIN=B09Q31V6NH&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">6.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/evga.webp" type="image/webp">
+<source srcset="/images/manufacturer/evga.png" type="image/png">
+<img alt="EVGA GeForce GT 1030 SC Low Profile Passive" loading="lazy" src="/images/manufacturer/evga.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-evga_geforce_gt_1030_sc_low_profile_passive">EVGA GeForce GT 1030 SC Low Profile Passive</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">30 W TDP</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09Q31V6NH/ref=as_li_tl?ie=UTF8&creativeASIN=B09Q31V6NH&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">7.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/evga.webp" type="image/webp">
+<source srcset="/images/manufacturer/evga.png" type="image/png">
+<img alt="EVGA GeForce GT 1030 SC Low Profile" loading="lazy" src="/images/manufacturer/evga.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-evga_geforce_gt_1030_sc_low_profile">EVGA GeForce GT 1030 SC Low Profile</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">30 W TDP</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09Q31V6NH/ref=as_li_tl?ie=UTF8&creativeASIN=B09Q31V6NH&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">8.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/evga.webp" type="image/webp">
+<source srcset="/images/manufacturer/evga.png" type="image/png">
+<img alt="EVGA GeForce GT 1030 SC Single Slot" loading="lazy" src="/images/manufacturer/evga.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-evga_geforce_gt_1030_sc_single_slot">EVGA GeForce GT 1030 SC Single Slot</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">30 W TDP</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09Q31V6NH/ref=as_li_tl?ie=UTF8&creativeASIN=B09Q31V6NH&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">9.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/msi.webp" type="image/webp">
+<source srcset="/images/manufacturer/msi.png" type="image/png">
+<img alt="MSI GeForce GT 1030 2GHD4 LP OC" loading="lazy" src="/images/manufacturer/msi.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-msi_geforce_gt_1030_2ghd4_lp_oc">MSI GeForce GT 1030 2GHD4 LP OC</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">30 W TDP</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09Q31V6NH/ref=as_li_tl?ie=UTF8&creativeASIN=B09Q31V6NH&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr><tr style="vertical-align: middle;"><td class="dt_rh dt_mobile_hide"><span style="font-size: 32px; font-weight: bold; padding-left: 3px; padding-right: 10px;">10.</span></td><td>
+<picture style="height: 38px; vertical-align: middle; margin-right: 3px;">
+<source srcset="/images/manufacturer/gainward.webp" type="image/webp">
+<source srcset="/images/manufacturer/gainward.png" type="image/png">
+<img alt="Gainward GeForce GT 1030 SilentFX" loading="lazy" src="/images/manufacturer/gainward.png" style="height: 38px; vertical-align: middle; margin-right: 3px;">
+</picture>
+</td><td><a href="gpu-gainward_geforce_gt_1030_silentfx">Gainward GeForce GT 1030 SilentFX</a></td><td class="dt_mobile_hide" style="text-align: right; padding-right: 20px;">30 W TDP</td>
+<td class="dt_mobile_hide"><a rel="nofollow" class="clean" title="Buy this graphic card at amazon!" target="_blank" href="https://www.amazon.com/gp/product/B09Q31V6NH/ref=as_li_tl?ie=UTF8&creativeASIN=B09Q31V6NH&linkCode=as2&tag=gpu-monkey-20"><button type="button" class="amazon_button_small">
+<img alt="Amazon" loading="lazy" class="amazon_button_small_img" src="/images/amazon_logo.png">
+</button></a></td>
+</tr></table><br />
+<div class="werb werb_start_5">
+
+<div align="center" data-freestar-ad="__336x280 __336x280" id="gpumonkeycom_incontent_6">
+<script data-cfasync="false" type="text/javascript">
+            freestar.config.enabled_slots.push({ placementName: "gpumonkeycom_incontent_6", slotId: "gpumonkeycom_incontent_6" });
+          </script>
+</div>
+</div>
+<div style="float: right; width: 125px;">
+<div style="background-color: #39579a; width: 60px; height: 36px; cursor: pointer; float: left; margin-right: 4px;" onclick="window.open('https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.gpu-monkey.com%2Fen%2F', 'Facebook', 'width=640, height=450');" title="Share @ Facebook">
+<img src="/images/facebook.png" loading="lazy" style="height: 30px; vertical-align: middle; margin-top: 3px; margin-left: 1px;" alt="Facebook">
+</div>
+<div style="background-color: #17a8e3; width: 60px; height: 36px; cursor: pointer; float: left;" onclick="window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.gpu-monkey.com%2Fen%2F&via=GPUMonkey', 'Twitter Tweet', 'width=640, height=450');" title="Share @ Twitter">
+<img src="/images/twitter.png" loading="lazy" style="height: 28px; vertical-align: middle; margin-top: 3px; margin-left: 6px;" alt="Twitter">
+</div>
+</div>
+</div>
+<div id="footer">
+<div style="margin-bottom: 5px;">Notice: We do not take any responsibility for the data shown at our site. Please use at your own risk.<br>Affiliate note: By purchasing via one of our green links or one of the banners, we receive a commission from Amazon</div>
+<a class="footer" href="/en/howwetest">How we test GPUs</a> |
+<a class="footer" href="/en/aboutus">About us</a> |
+<a class="footer" href="/en/imprint">Imprint</a> |
+<a class="footer" href="/en/data_protection">Data protection</a> |
+<a class="footer" href="/en/contact">Contact / Advertise</a> |
+<a class="footer" href="/en/team">Team</a>
+</div>
+</div>
+<script src="/js/main.js?1687188931" async></script>
+<script src="/ajax/ajax.js" async></script>
+<script>(function(){var js = "window['__CF$cv$params']={r:'7d9cd7a5cd268cba',m:'t7f1BD5t.Ccn6Zx6Q_AHeNw3xYBJm0_ENsBOWHBjOOM-1687188931-0-AWkLKMpFg8Nuxhw/4EWAlMh3tix9sEOHo2xwS0Cd7AIv'};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/invisible.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7d9cd7a5cd268cba","version":"2023.4.0","b":1,"token":"ed49f1cc4a584295982b5f9674fb502e","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

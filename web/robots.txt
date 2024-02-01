@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /search
+
+User-agent: Yandex
+Allow: /
+Disallow: /login
+Disallow: /search
+Clean-param: tab

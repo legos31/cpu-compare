@@ -1,0 +1,149 @@
+.autocomplete-empty {
+    padding: 30px;
+}
+
+.big-compare-top {
+    min-height: 54px;
+}
+
+.big-compare-date {
+    width: 130px;
+}
+
+.noty_theme__mint.noty_type__success {
+    background-color: #AFC765;
+    border-bottom: 1px solid #A0B55C;
+    color: #fff;
+}
+
+.noty_theme__mint.noty_bar .noty_body {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.noty_theme__mint.noty_type__error {
+    background-color: #DE636F;
+    border-bottom: 1px solid #CA5A65;
+    color: #fff;
+}
+
+.sidebar-compare-image {
+    width: 66px;
+    min-width: 66px;
+    height: 49px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pagination {
+    margin: 0px auto;
+}
+
+.pagination li {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    margin: 0px 2px;
+    border-radius: 4px;
+    box-shadow: 0 7px 14px 0 #dee5ed66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pagination li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 14px;
+}
+
+.pagination li a:hover,
+.pagination li.active a {
+    text-decoration: none;
+    color: white;
+}
+
+.pagination li:hover,
+.pagination li.active {
+    background-color: #e4b74b;
+}
+
+.t1-flex a {
+    color: #000000;
+}
+
+.t1-flex a:hover {
+    color: #e4b74b;
+    text-decoration: none;
+}
+
+.t2 img {
+    height: 28px;
+}
+
+.help-block {
+    position: absolute;
+    font-size: 12px;
+    color: red;
+}
+
+.btn,
+.btn:active,
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.comment-count {
+    opacity: .3;
+    font-weight: normal;
+    font-size: 15px;
+    margin-left: 15px;
+}
+.search{
+    position: relative;
+}
+.search-result{
+    position: absolute;
+    top: calc(100% + 3px);
+    background: white;
+    width: 100%;
+    border-radius: 22px;
+    padding: 10px;
+    z-index: 10;
+    box-shadow: 0 12px 40px -18px #000000;
+    display: none;
+}
+.search-result a{
+    display: block;
+    line-height: 30px;
+    color: black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.search-result a:hover{
+    color: #e4b74b;
+}
+.search-submit{
+    cursor: default;
+}
+#reportModal.show{
+    display: block;
+    background: rgba(0,0,0, 0.3);
+}
+@media (max-width: 992px) {
+    .toast{
+        display: none;
+    }
+}
